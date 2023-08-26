@@ -198,7 +198,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set local value" sid="774441843706750" type="WebStorage">
+                <action id="0" name="Set item" sid="520780062552812" type="LocalStorage">
                     <param id="0" name="Key">&quot;MusicLvl&quot;</param>
                     <param id="1" name="Value">MusicLvl</param>
                 </action>
@@ -209,7 +209,7 @@
                     <param id="0" name="Variable">MusicVolume</param>
                     <param id="1" name="Value">(MusicLvl*2)-20</param>
                 </action>
-                <action id="0" name="Set local value" sid="895352614321779" type="WebStorage">
+                <action id="0" name="Set item" sid="310278351805985" type="LocalStorage">
                     <param id="0" name="Key">&quot;SoundLvl&quot;</param>
                     <param id="1" name="Value">SoundLvl</param>
                 </action>

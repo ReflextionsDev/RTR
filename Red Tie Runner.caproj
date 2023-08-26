@@ -23,7 +23,6 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
-        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
@@ -2649,9 +2648,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="WebStorage" sid="6909374937378231">
-            <plugin id="WebStorage" />
-        </object-type>
         <object-type name="Tire" sid="9303652622917698">
             <plugin id="Sprite" />
             <behaviors>
@@ -3473,7 +3469,6 @@
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
-        <global-instance type="WebStorage" uid="3994" />
         <global-instance type="Browser" uid="101" />
         <global-instance type="NWjs" uid="111" />
         <global-instance type="Mouse" uid="3007" />

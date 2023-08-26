@@ -1093,7 +1093,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set local value" sid="9339003104667086" type="WebStorage">
+                        <action id="0" name="Set item" sid="270700766948852" type="LocalStorage">
                             <param id="0" name="Key">&quot;lvlunlock&quot;</param>
                             <param id="1" name="Value">LevelsUnlocked</param>
                         </action>
