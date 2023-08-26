@@ -102,9 +102,6 @@
                     <behavior-type name="Bullet" sid="16">
                         <behavior id="Bullet" />
                     </behavior-type>
-                    <behavior-type name="Rotate" sid="17">
-                        <behavior id="Rex_Rotate" />
-                    </behavior-type>
                     <behavior-type name="Physics" sid="18">
                         <behavior id="Physics" />
                     </behavior-type>

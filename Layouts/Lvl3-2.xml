@@ -3143,14 +3143,6 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Rotate">
-                            <properties>
-                                <activated>No</activated>
-                                <direction>Clockwise</direction>
-                                <speed>180</speed>
-                                <acceleration>0</acceleration>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="Physics">
                             <properties>
                                 <immovable>Yes</immovable>

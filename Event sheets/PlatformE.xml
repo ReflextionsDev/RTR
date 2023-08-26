@@ -1364,9 +1364,6 @@
                                 <action behavior="Platform" id="11" name="Set enabled" sid="372" type="player">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action behavior="Rotate" id="0" name="Set activated" sid="373" type="player">
-                                    <param id="0" name="Activated">1</param>
-                                </action>
                                 <action id="11" name="Set collisions enabled" sid="374" type="player">
                                     <param id="0" name="Collisions">0</param>
                                 </action>
