@@ -1,0 +1,14 @@
+# ------------ Construct 3
+*.uistate.json
+*_autosave_.c3p
+*.tmp
+# ------------ Construct 2
+*.uistate.xml
+*.uistate.xml
+Event sheets/*.uistate
+Event sheets/*.uistate.xml
+*.capx.backup*
+*.capx.autosave*
+dekstop.ini
+/desktop.ini
+*desktop.ini
