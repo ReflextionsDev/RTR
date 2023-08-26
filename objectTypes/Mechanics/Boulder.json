@@ -1,0 +1,68 @@
+{
+	"name": "Boulder",
+	"plugin-id": "Sprite",
+	"sid": 152,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 153
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 155
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 466,
+						"height": 466,
+						"originX": 0.497854,
+						"originY": 0.508584,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2924319,
+						"collisionPoly": {
+							"points": [
+								0.16309,
+								0.16309,
+								0.5,
+								0.0321888,
+								0.832618,
+								0.167382,
+								0.957082,
+								0.5,
+								0.824034,
+								0.824034,
+								0.5,
+								0.967811,
+								0.156652,
+								0.843348,
+								0.0150215,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 156,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

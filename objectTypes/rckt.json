@@ -1,0 +1,63 @@
+{
+	"name": "rckt",
+	"plugin-id": "Sprite",
+	"sid": 9447005180091484,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 1163317813282139
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 48,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4556768,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.28125,
+								0.5,
+								0.0625,
+								0.8125,
+								0.28125,
+								0.770833,
+								0.5,
+								0.729167,
+								0.59375,
+								0.5,
+								0.6875,
+								0.270833,
+								0.59375,
+								0.229167,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 5755627418645107,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

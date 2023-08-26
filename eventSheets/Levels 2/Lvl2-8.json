@@ -1,0 +1,214 @@
+{
+	"name": "Lvl2-8",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "PlatformE"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 627153443223288
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 4811108786663642,
+					"parameters": {
+						"x": "player.X",
+						"y": "player.Y"
+					}
+				}
+			],
+			"sid": 3865429228022608
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 6412179427373628
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 9406713548421376,
+					"parameters": {
+						"variable": "DoubleJump",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 1811822910904576,
+					"parameters": {
+						"layer": "3",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 1935912988432101,
+					"parameters": {
+						"layer": "4",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 5949788572838953,
+					"parameters": {
+						"layer": "5",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 2075767403417296,
+					"parameters": {
+						"layer": "6",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 196552040233233,
+					"parameters": {
+						"layer": "\"zipline\"",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 8826428795315834,
+					"parameters": {
+						"variable": "Runner",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "levelNum",
+					"sid": 9063609752622904,
+					"parameters": {
+						"frame-number": "17"
+					}
+				}
+			],
+			"sid": 6665362999244939
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 649632594569977,
+					"parameters": {
+						"object": "portal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 4143712971271646,
+					"parameters": {
+						"layout": "Lvl2-9"
+					}
+				}
+			],
+			"sid": 8099143989422391
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 7892528301326578
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 2675400321025316,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"comparison": 2,
+						"value": "17"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 7023540730448929,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"value": "17"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 9981529397428988,
+					"parameters": {
+						"name": "\"save\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 2496049399418895
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 4092335683924795,
+					"parameters": {
+						"variable": "Music",
+						"comparison": 0,
+						"value": "7"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 9354782323844752
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 5377861276662096,
+					"parameters": {
+						"variable": "Music",
+						"value": "7"
+					}
+				}
+			],
+			"sid": 3390537724735578
+		}
+	],
+	"sid": 279332656691087
+}

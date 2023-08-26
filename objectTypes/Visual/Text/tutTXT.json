@@ -1,0 +1,15 @@
+{
+	"name": "tutTXT",
+	"plugin-id": "Text",
+	"sid": 1375,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 1395
+		}
+	],
+	"effectTypes": []
+}

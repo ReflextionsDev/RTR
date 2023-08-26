@@ -1,0 +1,62 @@
+{
+	"name": "FontLoaderE",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 547678431467965
+				}
+			],
+			"actions": [
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn1",
+					"sid": 547465838358781,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn2",
+					"sid": 220090118504488,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn5",
+					"sid": 914234891175193,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 384038236583261,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 609354164853424,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 945426580575114
+		}
+	],
+	"sid": 186056305912605
+}

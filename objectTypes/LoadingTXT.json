@@ -1,0 +1,37 @@
+{
+	"name": "LoadingTXT",
+	"plugin-id": "Sprite",
+	"sid": 354416464213143,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 488,
+						"height": 155,
+						"originX": 0.5,
+						"originY": 0.503226,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7412203,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 465787897352060,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

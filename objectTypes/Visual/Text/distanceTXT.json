@@ -1,0 +1,9 @@
+{
+	"name": "distanceTXT",
+	"plugin-id": "Text",
+	"sid": 47,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

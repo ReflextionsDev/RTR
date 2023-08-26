@@ -1,0 +1,9 @@
+{
+	"name": "loadingText",
+	"plugin-id": "Text",
+	"sid": 39,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Tire",
+	"plugin-id": "Sprite",
+	"sid": 9303652622917698,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 2072621019722844
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7441569,
+						"collisionPoly": {
+							"points": [
+								0.145833,
+								0.145833,
+								0.5,
+								0,
+								0.854167,
+								0.145833,
+								1,
+								0.5,
+								0.864583,
+								0.864583,
+								0.5,
+								1,
+								0.135417,
+								0.864583,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 4316351525062584,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

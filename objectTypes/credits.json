@@ -1,0 +1,57 @@
+{
+	"name": "credits",
+	"plugin-id": "Sprite",
+	"sid": 3042839144869706,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 924,
+						"height": 520,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Nathan\\Desktop\\credits.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1595589,
+						"collisionPoly": {
+							"points": [
+								0.1,
+								0.15,
+								0.5,
+								0.138462,
+								0.782051,
+								0.326923,
+								0.565385,
+								0.5,
+								0.574359,
+								0.361538,
+								0.5,
+								0.886538,
+								0.075641,
+								0.886538,
+								0.0717949,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 6417275171337541,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

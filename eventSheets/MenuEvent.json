@@ -1,0 +1,1022 @@
+{
+	"name": "MenuEvent",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "FadeE"
+		},
+		{
+			"eventType": "variable",
+			"name": "Loaded",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 1414934588461176
+		},
+		{
+			"eventType": "variable",
+			"name": "MenuMusic",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 5980204685430471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 193,
+					"parameters": {
+						"object": "menuBtn1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 732464723395627,
+					"parameters": {
+						"name": "\"FadeOut\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 826991046906911,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 1288,
+					"parameters": {
+						"layout": "LevelSelect1"
+					}
+				}
+			],
+			"sid": 192
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 6448739503688654,
+					"parameters": {
+						"object": "menuBtn2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 841621775824947,
+					"parameters": {
+						"name": "\"FadeOut\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 252488842687771,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 8954978592017286,
+					"parameters": {
+						"layout": "Options"
+					}
+				}
+			],
+			"sid": 938945741695823
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 9415114102904062,
+					"parameters": {
+						"object": "menuBtn5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 874685584998744,
+					"parameters": {
+						"name": "\"FadeOut\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 969637865812821,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 4482136635022512,
+					"parameters": {
+						"layout": "More"
+					}
+				}
+			],
+			"sid": 2836173149564346
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 5049627751148837,
+					"parameters": {
+						"object": "menuBtn4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 7630543596879247
+				}
+			],
+			"sid": 9085653543045048
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 6166035475672873,
+					"parameters": {
+						"object": "menuBtn8"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 6371085630597471,
+			"disabled": true
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Load/Save",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 6397681186667486
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 2216151594603773,
+							"parameters": {
+								"variable": "Loaded",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 7393782698131766,
+							"parameters": {
+								"variable": "Loaded",
+								"value": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 1610572082718809,
+							"parameters": {
+								"name": "\"load\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 3132947516527748
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 1658641004685714,
+							"parameters": {
+								"name": "\"Load\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 4070823635846906,
+							"disabled": true,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"value": "30"
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 346135126929042,
+							"parameters": {
+								"key": "\"lvlunlock\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 402778938052657,
+							"parameters": {
+								"key": "\"Musiclvl\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 131914650985824,
+							"parameters": {
+								"key": "\"SoundLvl\""
+							}
+						}
+					],
+					"sid": 8678652729439531
+				}
+			],
+			"sid": 9602212046473072
+		},
+		{
+			"eventType": "comment",
+			"text": "Levels"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 748794111575895,
+					"parameters": {
+						"key": "\"lvlunlock\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 102317705417581,
+					"parameters": {
+						"key": "\"lvlunlock\""
+					}
+				}
+			],
+			"sid": 893886888496213
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 730219539335286,
+					"parameters": {
+						"key": "\"lvlunlock\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 558295731006417,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"value": "int(LocalStorage.ItemValue)"
+					}
+				}
+			],
+			"sid": 666084001926521
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 469850157826764,
+					"parameters": {
+						"key": "\"lvlunlock\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 744769020967479,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 382265155000153,
+			"disabled": true
+		},
+		{
+			"eventType": "comment",
+			"text": "Music"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 412859515050522,
+					"parameters": {
+						"key": "\"MusicLvl\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 479014785288665,
+					"parameters": {
+						"key": "\"MusicLvl\""
+					}
+				}
+			],
+			"sid": 290261859184812
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 503459152483939,
+					"parameters": {
+						"key": "\"MusicLvl\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 762770896238384,
+					"parameters": {
+						"variable": "MusicLvl",
+						"value": "int(LocalStorage.ItemValue)"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 465233914941886,
+					"parameters": {
+						"name": "\"update_audio\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 744001197118828
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 431235886493399,
+					"parameters": {
+						"key": "\"MusicLvl\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 615591300040381,
+					"parameters": {
+						"variable": "MusicLvl",
+						"value": "6"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 393854778529174,
+					"parameters": {
+						"name": "\"update_audio\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 635354145027209
+		},
+		{
+			"eventType": "comment",
+			"text": "Sound"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 466332276392731,
+					"parameters": {
+						"key": "\"SoundLvl\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 462785643819526,
+					"parameters": {
+						"key": "\"SoundLvl\""
+					}
+				}
+			],
+			"sid": 399358310737823
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 227195898358402,
+					"parameters": {
+						"key": "\"SoundLvl\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 985716046535670,
+					"parameters": {
+						"variable": "SoundLvl",
+						"value": "int(LocalStorage.ItemValue)"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 156885256275171,
+					"parameters": {
+						"name": "\"update_audio\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 170946691940434
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 976648339768496,
+					"parameters": {
+						"key": "\"SoundLvl\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 252503026627276,
+					"parameters": {
+						"variable": "SoundLvl",
+						"value": "10"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 893350009512038,
+					"parameters": {
+						"name": "\"update_audio\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 764090696552106
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 879591516207708,
+					"parameters": {
+						"name": "\"update_audio\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 699380056886548,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 897366313722638,
+							"parameters": {
+								"variable": "MusicVolume",
+								"value": "(MusicLvl*2)-20"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 670444865841715,
+							"parameters": {
+								"variable": "SoundVolume",
+								"value": "(SoundLvl*2)-20"
+							}
+						}
+					],
+					"sid": 754070938436195,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 815842807059396,
+									"parameters": {
+										"variable": "MusicLvl",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 194180645765000,
+									"parameters": {
+										"variable": "MusicVolume",
+										"value": "-100"
+									}
+								}
+							],
+							"sid": 299854173073916
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 638553661659384,
+									"parameters": {
+										"variable": "SoundLvl",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 246261498511981,
+									"parameters": {
+										"variable": "SoundVolume",
+										"value": "(SoundLvl*2)-20"
+									}
+								}
+							],
+							"sid": 483333398382160
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Clouds",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 1170,
+							"parameters": {
+								"interval-seconds": "random(4,8)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 1171,
+							"parameters": {
+								"object-to-create": "cloud",
+								"layer": "0",
+								"x": "random(900,1200)",
+								"y": "random(50,500)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 1169
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 1173
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 1174,
+							"parameters": {
+								"object": "cloud"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloud",
+							"sid": 1175,
+							"parameters": {
+								"frame-number": "random(0,4)"
+							}
+						}
+					],
+					"sid": 1172
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "cloud",
+							"sid": 1177
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloud",
+							"sid": 1178,
+							"parameters": {
+								"frame-number": "random(0,4)"
+							}
+						}
+					],
+					"sid": 1176
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "cloud",
+							"sid": 1613,
+							"parameters": {
+								"object": "outside"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "cloud",
+							"sid": 1614
+						}
+					],
+					"sid": 1612
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 1951
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "cloud",
+							"sid": 1952,
+							"parameters": {
+								"x": "cloud.X - 90*dt",
+								"y": "cloud.Y"
+							}
+						}
+					],
+					"sid": 1950
+				}
+			],
+			"sid": 5697672971818275
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-any-playing",
+					"objectClass": "Audio",
+					"sid": 5754619130453305,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 9592729945638760,
+					"parameters": {
+						"audio-file": "Kubbi - Sleet - 07 Planet III (Mesosphere)",
+						"loop": "looping",
+						"volume": "MusicVolume",
+						"stereo-pan": "0",
+						"tag-optional": "\"BGM\""
+					}
+				}
+			],
+			"sid": 4229883350180616
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 2653141108324978,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"comparison": 5,
+						"value": "30"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "menuBG",
+					"sid": 1935120577939638,
+					"parameters": {
+						"animation": "\"alt\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "menuBtn1",
+					"sid": 6279240814719559,
+					"disabled": true,
+					"parameters": {
+						"color": "rgb(0, 0, 0)"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "menuBtn2",
+					"sid": 5143306526945829,
+					"disabled": true,
+					"parameters": {
+						"color": "rgb(0, 0, 0)"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "menuBtn7",
+					"sid": 5062822660004274,
+					"disabled": true,
+					"parameters": {
+						"color": "rgb(0, 0, 0)"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "menuBtn5",
+					"sid": 2858982057772368,
+					"disabled": true,
+					"parameters": {
+						"color": "rgb(0, 0, 0)"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "menuBtn4",
+					"sid": 559915948125791,
+					"disabled": true,
+					"parameters": {
+						"color": "rgb(0, 0, 0)"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "menuBtn8",
+					"sid": 581026153022581,
+					"disabled": true,
+					"parameters": {
+						"color": "rgb(0, 0, 0)"
+					}
+				}
+			],
+			"sid": 7006040989053695
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 1528722291511999
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 886245317413439,
+					"parameters": {
+						"name": "\"FadeIn2\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn1",
+					"sid": 9366481881646820,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn2",
+					"sid": 805815504828843,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn4",
+					"sid": 1890473194983886,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn5",
+					"sid": 9875678846842744,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn7",
+					"sid": 7503084254457594,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "menuBtn8",
+					"sid": 4030436909492414,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				}
+			],
+			"sid": 6721457771847461,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-mobile-device",
+							"objectClass": "System",
+							"sid": 976746684260796
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "menuBtn4",
+							"sid": 378161873798689
+						},
+						{
+							"id": "set-position",
+							"objectClass": "menuBtn1",
+							"sid": 983013985929749,
+							"parameters": {
+								"x": "Self.X",
+								"y": "Self.Y + 30"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "menuBtn2",
+							"sid": 581629438320712,
+							"parameters": {
+								"x": "Self.X",
+								"y": "Self.Y + 60"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "menuBtn5",
+							"sid": 753522434952050,
+							"parameters": {
+								"x": "Self.X ",
+								"y": "Self.Y + 90"
+							}
+						}
+					],
+					"sid": 848406477292485
+				}
+			]
+		}
+	],
+	"sid": 123903655350408
+}

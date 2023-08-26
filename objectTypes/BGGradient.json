@@ -1,0 +1,37 @@
+{
+	"name": "BGGradient",
+	"plugin-id": "Sprite",
+	"sid": 8535842086841743,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 780,
+						"height": 520,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7350925,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 4043978087926904,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

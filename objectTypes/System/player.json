@@ -1,0 +1,164 @@
+{
+	"name": "player",
+	"plugin-id": "Sprite",
+	"sid": 3,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "zipline",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 4
+		},
+		{
+			"name": "health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 5
+		},
+		{
+			"name": "wingsuit",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 6
+		},
+		{
+			"name": "wingsuitdeath",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 7
+		},
+		{
+			"name": "climbing",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 8
+		},
+		{
+			"name": "dead",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 9
+		},
+		{
+			"name": "sliding",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 10
+		},
+		{
+			"name": "inPlace",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 11
+		},
+		{
+			"name": "originalX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 12
+		},
+		{
+			"name": "onGround",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 13
+		},
+		{
+			"name": "jump",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 1840
+		},
+		{
+			"name": "respawnX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 1969
+		},
+		{
+			"name": "respawnY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 1970
+		},
+		{
+			"name": "trampbounce",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 2371543639470371
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 15
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 16
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 18
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 19
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 780483,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "zipline",
+								"x": 0.820313,
+								"y": 0.175781
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 20,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

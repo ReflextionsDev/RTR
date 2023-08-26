@@ -1,0 +1,92 @@
+{
+	"name": "LevelSelect2",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "LevelSelect"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 348230545404293,
+					"parameters": {
+						"object": "buttonLeft"
+					}
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 991917306962507,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 177665886389735,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 802656231524975,
+					"parameters": {
+						"layout": "LevelSelect1"
+					}
+				}
+			],
+			"sid": 875145329835702,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 460200254775565,
+					"parameters": {
+						"object": "buttonRight"
+					}
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 784804357317074,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 341571941926336,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 890190450213682,
+					"parameters": {
+						"layout": "LevelSelect3"
+					}
+				}
+			],
+			"sid": 831494375255744,
+			"isOrBlock": true
+		}
+	],
+	"sid": 509323816775409
+}

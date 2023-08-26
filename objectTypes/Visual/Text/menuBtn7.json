@@ -1,0 +1,15 @@
+{
+	"name": "menuBtn7",
+	"plugin-id": "Text",
+	"sid": 7888156135681556,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 7120321596533768
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,340 @@
+{
+	"name": "Lvl3-9",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "PlatformE"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 2877018100376831
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 8097840910078189,
+					"parameters": {
+						"variable": "DoubleJump",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 7568994731422197,
+					"parameters": {
+						"layer": "3",
+						"scale": "0.5"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 36923726721992,
+					"parameters": {
+						"layer": "4",
+						"scale": "0.5"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 9639990177964918,
+					"parameters": {
+						"layer": "5",
+						"scale": "0.5"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 7191935836347038,
+					"parameters": {
+						"layer": "6",
+						"scale": "0.5"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 674143322772982,
+					"parameters": {
+						"layer": "\"zipline\"",
+						"scale": "0.5"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "levelNum",
+					"sid": 4297419336328939,
+					"parameters": {
+						"frame-number": "28"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 4984552870468743,
+					"parameters": {
+						"variable": "Runner",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 2815424820842611,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-mobile-device",
+							"objectClass": "System",
+							"sid": 687913172241232
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 539053629195820,
+							"parameters": {
+								"layer": "\"WingsuitHUD\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 628964252608449
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 1284446172864736
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 5004954573731675,
+					"parameters": {
+						"x": "player.X",
+						"y": "player.Y"
+					}
+				}
+			],
+			"sid": 4739335877256508
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 4459769892364582,
+					"parameters": {
+						"object": "portal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 9132536796155994,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"value": "30"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 5830591208548918,
+					"parameters": {
+						"name": "\"save\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 7845726005422305,
+					"parameters": {
+						"layout": "Lvl3-10"
+					}
+				}
+			],
+			"sid": 7890433858471706
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 547005750071727
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 9881186825492556,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"comparison": 2,
+						"value": "28"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 1696557758114582,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"value": "28"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 6570406290465947,
+					"parameters": {
+						"name": "\"save\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 9687361141186574
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 3634937326710484,
+					"parameters": {
+						"variable": "Music",
+						"comparison": 0,
+						"value": "11"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 3443843190623245
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 2896742802811179,
+					"parameters": {
+						"variable": "Music",
+						"value": "11"
+					}
+				}
+			],
+			"sid": 5239709269005371
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 4302795705267065,
+					"parameters": {
+						"key": 84
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 6875943914719917,
+					"parameters": {
+						"instance-variable": "wingsuitdeath"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 39553769793346,
+					"parameters": {
+						"instance-variable": "zipline"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "player",
+					"sid": 9018449259201176,
+					"parameters": {
+						"instance-variable": "wingsuit"
+					}
+				}
+			],
+			"sid": 7337307456618259
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 4053978915684575,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 9135852144437892,
+					"parameters": {
+						"instance-variable": "wingsuitdeath"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 9103071843463208,
+					"parameters": {
+						"instance-variable": "zipline"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "player",
+					"sid": 340483392207217,
+					"parameters": {
+						"instance-variable": "wingsuit"
+					}
+				}
+			],
+			"sid": 9784779299713304
+		}
+	],
+	"sid": 574338983247084
+}

@@ -1,0 +1,63 @@
+{
+	"name": "TrtBody",
+	"plugin-id": "Sprite",
+	"sid": 6133519103570584,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 7273096194577834
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 48,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6346437,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.28125,
+								0.5,
+								0.0625,
+								0.8125,
+								0.28125,
+								0.770833,
+								0.5,
+								0.729167,
+								0.59375,
+								0.5,
+								0.6875,
+								0.270833,
+								0.59375,
+								0.229167,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 6246882419628814,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

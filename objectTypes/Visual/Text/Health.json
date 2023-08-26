@@ -1,0 +1,9 @@
+{
+	"name": "Health",
+	"plugin-id": "Text",
+	"sid": 38,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

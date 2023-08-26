@@ -1,0 +1,15 @@
+{
+	"name": "cs1Text1",
+	"plugin-id": "Text",
+	"sid": 33,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 34
+		}
+	],
+	"effectTypes": []
+}

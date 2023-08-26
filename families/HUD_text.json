@@ -1,0 +1,15 @@
+{
+	"name": "HUD_text",
+	"plugin-id": "Text",
+	"sid": 2923227973853247,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Frames",
+		"Health",
+		"PlayerAngle",
+		"tutTXT",
+		"wSpeed"
+	]
+}

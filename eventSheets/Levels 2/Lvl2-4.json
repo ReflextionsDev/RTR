@@ -1,0 +1,228 @@
+{
+	"name": "Lvl2-4",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "PlatformE"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 8738461552133875
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 9370144722565592,
+					"parameters": {
+						"x": "player.X",
+						"y": "player.Y"
+					}
+				}
+			],
+			"sid": 1584907378791145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 5835331803921209
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 7723691414882921,
+					"parameters": {
+						"variable": "DoubleJump",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 742313205398166,
+					"parameters": {
+						"layer": "3",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 3324950808810828,
+					"parameters": {
+						"layer": "4",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 3585327999246196,
+					"parameters": {
+						"layer": "5",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 5414904315016616,
+					"parameters": {
+						"layer": "6",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 341920369971891,
+					"parameters": {
+						"layer": "\"zipline\"",
+						"scale": "0.75"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 886561230912279,
+					"parameters": {
+						"variable": "Runner",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 8910856053255945
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 1270887651424221,
+					"parameters": {
+						"object": "portal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 2475378540568455,
+					"parameters": {
+						"layout": "Lvl2-5"
+					}
+				}
+			],
+			"sid": 4994510699092184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 5865019389926819
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "levelNum",
+					"sid": 5514030084097187,
+					"parameters": {
+						"frame-number": "13"
+					}
+				}
+			],
+			"sid": 8677587828778016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 1897944635170789
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 870696210810171,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"comparison": 2,
+						"value": "13"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 1833251401573792,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"value": "13"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 8401403044344998,
+					"parameters": {
+						"name": "\"save\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 2769793849494047
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 6278366801563863,
+					"parameters": {
+						"variable": "Music",
+						"comparison": 0,
+						"value": "5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 6143903576796357
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 5083484766483742,
+					"disabled": true,
+					"parameters": {
+						"variable": "Music",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 2608570257873794
+		}
+	],
+	"sid": 804108695998534
+}

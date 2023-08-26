@@ -1,0 +1,120 @@
+{
+	"name": "FadeE",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 588308371392604,
+					"parameters": {
+						"name": "\"FadeIn\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 686153669057538,
+					"parameters": {
+						"object-to-create": "FadeIn",
+						"layer": "9",
+						"x": "-1000",
+						"y": "-1000",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "FadeIn",
+					"sid": 914795900451007,
+					"parameters": {
+						"width": "20000",
+						"height": "20000"
+					}
+				}
+			],
+			"sid": 633364554270681
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 914694306033423,
+					"parameters": {
+						"name": "\"FadeIn2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 101378040198975,
+					"parameters": {
+						"object-to-create": "FadeIn",
+						"layer": "1",
+						"x": "-1000",
+						"y": "-1000",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "FadeIn",
+					"sid": 398040643450774,
+					"parameters": {
+						"width": "20000",
+						"height": "20000"
+					}
+				}
+			],
+			"sid": 962849375801427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 605882014061893,
+					"parameters": {
+						"name": "\"FadeOut\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 691075356269421,
+					"parameters": {
+						"object-to-create": "FadeOut",
+						"layer": "1",
+						"x": "-1000",
+						"y": "-1000",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "FadeOut",
+					"sid": 185174490816093,
+					"parameters": {
+						"width": "20000",
+						"height": "20000"
+					}
+				}
+			],
+			"sid": 414145886413593
+		}
+	],
+	"sid": 173210558050595
+}

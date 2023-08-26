@@ -1,0 +1,49 @@
+{
+	"name": "zipline",
+	"plugin-id": "Sprite",
+	"sid": 140,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8833844,
+						"collisionPoly": {
+							"points": [
+								0.0664063,
+								0.117188,
+								0.9375,
+								0.117188,
+								0.941406,
+								0.8125,
+								0.0703125,
+								0.8125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 141,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

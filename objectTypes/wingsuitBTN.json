@@ -1,0 +1,63 @@
+{
+	"name": "wingsuitBTN",
+	"plugin-id": "Sprite",
+	"sid": 4639100817985497,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 643536421993974
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3113614,
+						"collisionPoly": {
+							"points": [
+								0.260417,
+								0.260417,
+								0.666667,
+								0.0729167,
+								1,
+								0.25,
+								1,
+								0.666667,
+								1,
+								1,
+								0.666667,
+								1,
+								0.270833,
+								1,
+								0.104167,
+								0.666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 9416404241609860,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

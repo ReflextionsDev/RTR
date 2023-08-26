@@ -1,0 +1,22 @@
+{
+	"name": "HUD_objects",
+	"plugin-id": "Sprite",
+	"sid": 1299712665550803,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"buttonLeft",
+		"buttonRight",
+		"buttonUp",
+		"gameover",
+		"level",
+		"levelNum",
+		"nullDown",
+		"nullLeft",
+		"nullRight",
+		"nullUp",
+		"outside",
+		"pause"
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "CutsceneObj",
+	"plugin-id": "Text",
+	"sid": 35,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TouchCount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 36
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

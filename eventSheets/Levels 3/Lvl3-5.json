@@ -1,0 +1,282 @@
+{
+	"name": "Lvl3-5",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "PlatformE"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 854563555093397
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 737518361237858,
+					"parameters": {
+						"variable": "DoubleJump",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "levelNum",
+					"sid": 4436243291189125,
+					"parameters": {
+						"frame-number": "24"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 2229349286104317,
+					"parameters": {
+						"variable": "Runner",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 4813046724511991
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 678912686385358
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Camera",
+					"sid": 821099211455870,
+					"parameters": {
+						"y": "outside.Y"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "outside",
+					"sid": 748374166023100,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 633885586202735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 215197258322662
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "outside",
+					"sid": 596760567925803,
+					"parameters": {
+						"y": "outside.Y - 160*dt"
+					}
+				}
+			],
+			"sid": 504350492553935
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 107252461813508
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 594334351185872,
+					"parameters": {
+						"instance-variable": "dead"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Camera",
+					"sid": 523751146079575,
+					"parameters": {
+						"object": "player",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 577202733115095
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 324484158898175
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 633110085216640,
+					"parameters": {
+						"variable": "DoubleJump",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 366719454231357,
+					"parameters": {
+						"variable": "Runner",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 791884723295648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 3231476863140103,
+					"parameters": {
+						"object": "portal"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 9049725841158908,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 1723318666004207,
+							"parameters": {
+								"layout": "Lvl3-6"
+							}
+						}
+					],
+					"sid": 4562769712524144
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 1336630370083079,
+							"parameters": {
+								"layout": "Lvl3-6"
+							}
+						}
+					],
+					"sid": 491693027557076
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 9558560660028066
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 6747027331022288,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"comparison": 2,
+						"value": "24"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 3331082114175874,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"value": "24"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 7922300805527387,
+					"parameters": {
+						"name": "\"save\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 9493145862962284
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 4994870555281793,
+					"parameters": {
+						"variable": "Music",
+						"comparison": 0,
+						"value": "10"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 1243441840881539
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 3704904889253063,
+					"parameters": {
+						"variable": "Music",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 4167236130990498
+		}
+	],
+	"sid": 321971457541576
+}

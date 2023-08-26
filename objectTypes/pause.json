@@ -1,0 +1,43 @@
+{
+	"name": "pause",
+	"plugin-id": "Sprite",
+	"sid": 1763127633335252,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 778820447574784
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Drive\\Assets\\Kenney_Game_Assets\\Art\\Onscreen controls (400 assets)\\Sprites\\flatLight\\flatLight12.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3768640,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 7921261311493701,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

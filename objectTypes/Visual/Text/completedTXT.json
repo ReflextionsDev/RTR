@@ -1,0 +1,55 @@
+{
+	"name": "completedTXT",
+	"plugin-id": "Sprite",
+	"sid": 1527,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 600,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4557744,
+						"collisionPoly": {
+							"points": [
+								0.0416667,
+								0.25,
+								0.5,
+								0.74,
+								0.961667,
+								0.23,
+								0.97,
+								0.82,
+								0.5,
+								0.85,
+								0.04,
+								0.76,
+								0.025,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 1528,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

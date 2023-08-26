@@ -1,0 +1,63 @@
+{
+	"name": "buttonLeft",
+	"plugin-id": "Sprite",
+	"sid": 50,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 374340269966221
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5275974,
+						"collisionPoly": {
+							"points": [
+								0.075,
+								0.075,
+								0.5,
+								0,
+								0.925,
+								0.075,
+								1,
+								0.5,
+								0.925,
+								0.925,
+								0.5,
+								1,
+								0.075,
+								0.925,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 51,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

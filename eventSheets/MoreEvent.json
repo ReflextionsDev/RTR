@@ -1,0 +1,410 @@
+{
+	"name": "MoreEvent",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "FadeE"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Clouds",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 1170,
+							"parameters": {
+								"interval-seconds": "random(4,8)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 1171,
+							"parameters": {
+								"object-to-create": "cloud",
+								"layer": "0",
+								"x": "random(900,1200)",
+								"y": "random(50,500)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 1169
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 1173
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 1174,
+							"parameters": {
+								"object": "cloud"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloud",
+							"sid": 1175,
+							"parameters": {
+								"frame-number": "random(0,4)"
+							}
+						}
+					],
+					"sid": 1172
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "cloud",
+							"sid": 1177
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloud",
+							"sid": 1178,
+							"parameters": {
+								"frame-number": "random(0,4)"
+							}
+						}
+					],
+					"sid": 1176
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "cloud",
+							"sid": 1613,
+							"parameters": {
+								"object": "outside"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "cloud",
+							"sid": 1614
+						}
+					],
+					"sid": 1612
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 1951
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "cloud",
+							"sid": 1952,
+							"parameters": {
+								"x": "cloud.X - 90*dt",
+								"y": "cloud.Y"
+							}
+						}
+					],
+					"sid": 1950
+				}
+			],
+			"sid": 7219576077458594
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 155543429812375,
+					"parameters": {
+						"object": "backbtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 646068455681215,
+					"parameters": {
+						"name": "\"FadeOut\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 957265818871736,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 181550268959934,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 972908793953686
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 3999426683391233,
+					"parameters": {
+						"object": "reflexTwitter"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 7956439633453437,
+					"parameters": {
+						"url": "\"https://twitter.com/ReflextionsOfic\"",
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 7082684129760568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 2702737945755931,
+					"parameters": {
+						"object": "ntTwitter"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 869265546595112,
+					"parameters": {
+						"url": "\"https://twitter.com/SymphonicStorms\"",
+						"tag": "\"2\""
+					}
+				}
+			],
+			"sid": 7570377636419959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 9422924665772336,
+					"parameters": {
+						"object": "kubbiTwitter"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 6175957122961116,
+					"parameters": {
+						"url": "\"https://twitter.com/_kubbi\"",
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 3099605321833169
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 5028297613648071,
+					"parameters": {
+						"object": "ReflextionsWeb"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 4308683806492236,
+					"parameters": {
+						"url": "\"http://reflextionsdev.com\"",
+						"tag": "\"Reflextions\""
+					}
+				}
+			],
+			"sid": 2627832395695325
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 3256203387701267,
+					"parameters": {
+						"object": "kubbiTwitter"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 478407420790437,
+					"parameters": {
+						"object": "ReflextionsWeb"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 8199810924826091,
+					"parameters": {
+						"object": "reflexTwitter"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 4761289862377741,
+					"parameters": {
+						"object": "ntTwitter"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 5270543988404966,
+					"parameters": {
+						"cursor-style": "hand"
+					}
+				}
+			],
+			"sid": 7466474417722754,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 8961148656844527,
+					"parameters": {
+						"object": "kubbiTwitter"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 1004778641842966,
+					"parameters": {
+						"object": "ReflextionsWeb"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 1356076464713327,
+					"parameters": {
+						"object": "reflexTwitter"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 8112385259370659,
+					"parameters": {
+						"object": "ntTwitter"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 6623789219802849,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				}
+			],
+			"sid": 1046672458044656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 408901643660790
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 131490961295189,
+					"parameters": {
+						"name": "\"FadeIn2\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 988753103240089
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "FadeE"
+		}
+	],
+	"sid": 294432266632960
+}

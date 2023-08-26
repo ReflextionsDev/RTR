@@ -1,0 +1,15 @@
+{
+	"name": "Fullscreen",
+	"plugin-id": "Text",
+	"sid": 4071379052041919,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 6434779865329253
+		}
+	],
+	"effectTypes": []
+}

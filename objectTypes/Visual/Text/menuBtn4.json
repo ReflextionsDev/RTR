@@ -1,0 +1,15 @@
+{
+	"name": "menuBtn4",
+	"plugin-id": "Text",
+	"sid": 1525,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 1526
+		}
+	],
+	"effectTypes": []
+}

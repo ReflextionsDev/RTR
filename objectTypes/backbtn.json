@@ -1,0 +1,43 @@
+{
+	"name": "backbtn",
+	"plugin-id": "Sprite",
+	"sid": 6321859039174281,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 304071490006480
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Drive\\Assets\\Kenney_Game_Assets\\Art\\Onscreen controls (400 assets)\\Sprites\\flatDark\\flatDark34.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8516048,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 9198798664078688,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "TiledBackground4",
+	"plugin-id": "TiledBg",
+	"sid": 984077535323179,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 924,
+		"height": 520,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "E:\\Drive\\Projects\\RTR\\PromoArt\\CityBGBot.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4917049,
+		"useCollisionPoly": true
+	}
+}

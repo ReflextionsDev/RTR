@@ -1,0 +1,42 @@
+{
+	"name": "bg0",
+	"plugin-id": "TiledBg",
+	"sid": 66,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "OriginalX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 67
+		},
+		{
+			"name": "OriginalY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 68
+		},
+		{
+			"name": "tilewidth",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 69
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 780,
+		"height": 520,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4767370,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,1147 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 35000,
+	"name": "Red Tie Runner",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NodeWebkit",
+			"name": "NW.js",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowvertical",
+			"name": "Glow vertical",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "hsladjust",
+			"name": "Adjust HSL",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "28fw3vf77gdlq",
+	"objectTypes": {
+		"items": [
+			"fan",
+			"windUp",
+			"windDown",
+			"windLeft",
+			"windRight",
+			"Sprite",
+			"TiledBackground",
+			"moving",
+			"Gamepad",
+			"Sprite2",
+			"lvlText",
+			"generalTxt",
+			"backbtn",
+			"MusicLeft",
+			"SoundLeft",
+			"MusicRight",
+			"SoundRight",
+			"musicLvl",
+			"soundLvl",
+			"lock",
+			"pause",
+			"TiledBackground2",
+			"Sprite4",
+			"spikes",
+			"Sprite5",
+			"marker",
+			"Tire",
+			"trampoline",
+			"tramprange",
+			"Robot",
+			"robLeft",
+			"robRight",
+			"TrtBody",
+			"TrtBarrel",
+			"TrtFlash",
+			"TrtLaser",
+			"trtsensor",
+			"rckt",
+			"rcktBarrel",
+			"rcktsensor",
+			"rocket",
+			"wingsuitBTN",
+			"Sprite6",
+			"spikerange",
+			"HelpTXT",
+			"z1",
+			"z2",
+			"z3",
+			"z4",
+			"z5",
+			"underline",
+			"vc1",
+			"vc2",
+			"credits",
+			"reflexTwitter",
+			"ntTwitter",
+			"Browser",
+			"BGGradient",
+			"kubbiTwitter",
+			"ReflextionsWeb",
+			"Fullscreen",
+			"NWjs",
+			"Mouse",
+			"Loading",
+			"LoadingBG",
+			"Sprite9",
+			"LoadingTXT",
+			"Sprite3",
+			"TiledBackground3",
+			"TiledBackground4",
+			"Sprite7",
+			"Sprite8",
+			"Sprite10",
+			"playbtn",
+			"LocalStorage"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Audio",
+					"Keyboard",
+					"Touch",
+					"player",
+					"playerSprite",
+					"Function",
+					"Array",
+					"Camera",
+					"loadingSprite"
+				],
+				"subfolders": [],
+				"name": "System"
+			},
+			{
+				"items": [
+					"blackBG",
+					"outside"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"cs1Text1",
+							"CutsceneObj",
+							"Frames",
+							"Health",
+							"loadingText",
+							"menuBtn1",
+							"menuBtn3",
+							"menuBtn2",
+							"wSpeed",
+							"PlayerAngle",
+							"distanceTXT",
+							"menuBtn4",
+							"title",
+							"gameover",
+							"completedTXT",
+							"level",
+							"tutTXT",
+							"levelNum",
+							"menuBtn5",
+							"menuBtn6",
+							"menuBtn7",
+							"menuBtn8"
+						],
+						"subfolders": [],
+						"name": "Text"
+					},
+					{
+						"items": [
+							"buttonDown",
+							"buttonLeft",
+							"buttonRight",
+							"buttonUp",
+							"nullDown",
+							"nullLeft",
+							"nullRight",
+							"nullUp",
+							"touchpad1",
+							"buttonDown2"
+						],
+						"subfolders": [],
+						"name": "Controls"
+					},
+					{
+						"items": [
+							"bg0",
+							"cloud",
+							"FadeIn",
+							"FadeOut",
+							"menuBG"
+						],
+						"subfolders": [],
+						"name": "BG"
+					}
+				],
+				"name": "Visual"
+			},
+			{
+				"items": [
+					"crate2",
+					"crate",
+					"bg1",
+					"wall",
+					"platform",
+					"BulletBird",
+					"movingplatform",
+					"plat1",
+					"checkpoint",
+					"portal",
+					"plat2",
+					"barrier",
+					"beltLeft",
+					"beltRight",
+					"movingplat"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"ParticleDirt",
+							"particleDust",
+							"MPParticle",
+							"jumpingparticle"
+						],
+						"subfolders": [],
+						"name": "Particles"
+					}
+				],
+				"name": "Objects"
+			},
+			{
+				"items": [
+					"Boulder"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"bird",
+							"birdHitBox",
+							"birdHitBoxTop"
+						],
+						"subfolders": [],
+						"name": "Bird"
+					},
+					{
+						"items": [
+							"Ladder",
+							"LadderTop",
+							"ground"
+						],
+						"subfolders": [],
+						"name": "Ladder"
+					},
+					{
+						"items": [
+							"zipline",
+							"ziplineCap",
+							"ziplineEnd",
+							"ziplinepole"
+						],
+						"subfolders": [],
+						"name": "Zipline"
+					},
+					{
+						"items": [
+							"hoopback",
+							"hoop"
+						],
+						"subfolders": [],
+						"name": "Wingusit"
+					}
+				],
+				"name": "Mechanics"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Spawning"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"HUD_objects",
+			"HUD_text"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Menu",
+			"Loading",
+			"Options",
+			"More",
+			"Resource",
+			"FontLoader"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Lvl1-1",
+					"Lvl1-2",
+					"Lvl1-3",
+					"Lvl1-4",
+					"Lvl1-5",
+					"Lvl1-6",
+					"Lvl1-7",
+					"Lvl1-8",
+					"Lvl1-9",
+					"Lvl1-10"
+				],
+				"subfolders": [],
+				"name": "Levels 1"
+			},
+			{
+				"items": [
+					"Lvl2-1",
+					"Lvl2-2",
+					"Lvl2-3",
+					"Lvl2-4",
+					"Lvl2-5",
+					"Lvl2-6",
+					"Lvl2-7",
+					"Lvl2-8",
+					"Lvl2-9",
+					"Lvl2-10"
+				],
+				"subfolders": [],
+				"name": "Levels 2"
+			},
+			{
+				"items": [
+					"Lvl3-1",
+					"Lvl3-2",
+					"Lvl3-3",
+					"Lvl3-4",
+					"Lvl3-5",
+					"Lvl3-6",
+					"Lvl3-7",
+					"Lvl3-8",
+					"Lvl3-9",
+					"Lvl3-10"
+				],
+				"subfolders": [],
+				"name": "Levels 3"
+			},
+			{
+				"items": [
+					"LevelSelect1",
+					"LevelSelect2",
+					"LevelSelect3"
+				],
+				"subfolders": [],
+				"name": "LevelSelect"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"MenuEvent",
+			"OptionsEvent",
+			"PlatformE",
+			"MoreEvent",
+			"LoadingE",
+			"FadeE",
+			"FontLoaderE"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Lvl1",
+					"Lvl2",
+					"Lvl7",
+					"Lvl8",
+					"Lvl3",
+					"Lvl4",
+					"Lvl5",
+					"Lvl6",
+					"Lvl10",
+					"Lvl9"
+				],
+				"subfolders": [],
+				"name": "Levels 1"
+			},
+			{
+				"items": [
+					"Lvl2-2",
+					"Lvl2-1",
+					"Lvl2-3",
+					"lvl2-5",
+					"Lvl2-6",
+					"Lvl2-8",
+					"Lvl2-10",
+					"Lvl2-4",
+					"Lvl2-7",
+					"LVl2-9"
+				],
+				"subfolders": [],
+				"name": "Levels 2"
+			},
+			{
+				"items": [
+					"Lvl3-1",
+					"Lvl3-2",
+					"Lvl3-3",
+					"Lvl3-4",
+					"Lvl3-5",
+					"Lvl3-6",
+					"Lvl3-7",
+					"Lvl3-8",
+					"Lvl3-9",
+					"LVl3-10"
+				],
+				"subfolders": [],
+				"name": "Levels 3"
+			},
+			{
+				"items": [
+					"LevelSelect",
+					"LevelSelect1",
+					"LevelSelect2",
+					"LevelSelect3"
+				],
+				"subfolders": [],
+				"name": "LevelSelect"
+			}
+		]
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "Fall.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 458523497378314,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Fall.m4a",
+					"type": "audio/mp4",
+					"sid": 624868328244394,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explosion 2.m4a",
+					"type": "audio/mp4",
+					"sid": 105901313465727,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Thud 2.m4a",
+					"type": "audio/mp4",
+					"sid": 230270660496595,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Thud 2.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 968961043826502,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "laser6.m4a",
+					"type": "audio/mp4",
+					"sid": 881613985931891,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explosion 2.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 776627472046981,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "laser6.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 375258752176097,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pepSound3.m4a",
+					"type": "audio/mp4",
+					"sid": 554624196606373,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pepSound3.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 668451555103155,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "phaserUp6.m4a",
+					"type": "audio/mp4",
+					"sid": 931327516229516,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "phaserUp6.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 154700720861550,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Airshot2.m4a",
+					"type": "audio/mp4",
+					"sid": 118297696891683,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Airshot2.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 598468984775484,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pepSound5.m4a",
+					"type": "audio/mp4",
+					"sid": 706580365900463,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pepSound5.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 101384329309250,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Spring.m4a",
+					"type": "audio/mp4",
+					"sid": 251808947698452,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Spring.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 592961443808842,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "Morax.m4a",
+					"type": "audio/mp4",
+					"sid": 630526087402632,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Morax.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 617823214553684,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Weeping_Demon.m4a",
+					"type": "audio/mp4",
+					"sid": 911027920525397,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Weeping_Demon.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 422571409251067,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rose_At_Nightfall.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 783505427051105,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rose_At_Nightfall.m4a",
+					"type": "audio/mp4",
+					"sid": 361488848637431,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rose_At_Meridiem.m4a",
+					"type": "audio/mp4",
+					"sid": 212655467315937,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rose_At_Meridiem.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 251933528234489,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Gas Powered EP - 02 Seahorse Dreams.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 332063037833562,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Gas Powered EP - 02 Seahorse Dreams.m4a",
+					"type": "audio/mp4",
+					"sid": 385806680158325,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Gas Powered EP - 03 Up In My Jam (All Of A Sudden).ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 563786504545925,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Gas Powered EP - 03 Up In My Jam (All Of A Sudden).m4a",
+					"type": "audio/mp4",
+					"sid": 889226287027796,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Gas Powered EP - 01 Vitamin B12.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 504693548733198,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Gas Powered EP - 01 Vitamin B12.m4a",
+					"type": "audio/mp4",
+					"sid": 969473770343970,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MMOverdrive - Title Screen.m4a",
+					"type": "audio/mp4",
+					"sid": 783813508850902,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MMOverdrive - Battle 01.m4a",
+					"type": "audio/mp4",
+					"sid": 202882283500768,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Gas Powered EP - 04 The See-Through Zone.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 997411291292295,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Gas Powered EP - 04 The See-Through Zone.m4a",
+					"type": "audio/mp4",
+					"sid": 577550642156138,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MMOverdrive - Title Screen.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 720194156791995,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MMOverdrive - Battle 01.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 585421930641529,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Circuithead - 04 Indolence.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 538953398871969,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Sleet - 07 Planet III (Mesosphere).ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 245552494384822,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Sleet - 07 Planet III (Mesosphere).m4a",
+					"type": "audio/mp4",
+					"sid": 187305434661559,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Circuithead - 04 Indolence.m4a",
+					"type": "audio/mp4",
+					"sid": 721740279665022,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Circuithead - 06 Paracet.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 989256184172130,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kubbi - Circuithead - 06 Paracet.m4a",
+					"type": "audio/mp4",
+					"sid": 148986099140616,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "mathlete-bulky-webfont.woff",
+					"type": "application/font-woff",
+					"sid": 715715009005512,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mathlete-bulky-webfont.eot",
+					"type": "application/vnd.ms-fontobject",
+					"sid": 366098815244753,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mathlete-bulky-webfont.woff2",
+					"type": "font/woff2",
+					"sid": 851817123372235,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mathlete-bulky-webfont.ttf",
+					"type": "application/font-sfnt",
+					"sid": 339197292105131,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 189581109445879,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 766459341920575,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-114.png",
+					"type": "image/png",
+					"sid": 344941833985398,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 418696039529931,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 941835870863566,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 163189520656534,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "generator_config.txt",
+							"type": "text/plain",
+							"sid": 503159259325425,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "mathlete-bulky-demo.html",
+							"type": "text/html",
+							"sid": 819739740051452,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "stylesheet.css",
+							"type": "text/css",
+							"sid": 590964068915032,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "mathlete-bulky-webfont.svg",
+							"type": "image/svg+xml",
+							"sid": 180382271093996,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Mathlete Bulky"
+				}
+			]
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "Red Tie Runner is a 100% free, challenging, reflex-based, 2D platforming game.",
+		"version": "1.0.0.0",
+		"author": "Nathan Bennett",
+		"authorEmail": "Reflextionsdev@gmail.com",
+		"authorWebsite": "http://reflextionsdev.com",
+		"appId": "rtr.reflextionsdev.com",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": true,
+		"fullscreenMode": "scale-outer",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "high",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "progress-logo",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "flat",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 924,
+	"viewportHeight": 520,
+	"firstLayout": "Loading"
+}

@@ -1,0 +1,84 @@
+{
+	"name": "menuBG",
+	"plugin-id": "Sprite",
+	"sid": 78,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 135296570494858
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 606,
+						"height": 184,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Drive\\Projects\\RTR\\PromoArt\\Tie.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8071254,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.336957,
+								0.290429,
+								1,
+								0.888602,
+								0.461955,
+								0,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 79,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 606,
+						"height": 184,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Drive\\Projects\\RTR\\PromoArt\\Title16-9.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8527794,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 4100418383233409,
+				"name": "alt",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

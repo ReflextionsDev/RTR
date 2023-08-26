@@ -1,0 +1,269 @@
+{
+	"name": "Lvl1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "PlatformE"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 2044,
+					"parameters": {
+						"object": "portal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 2049,
+					"parameters": {
+						"layout": "Lvl1-2"
+					}
+				}
+			],
+			"sid": 2043
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 2104
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 2105,
+					"parameters": {
+						"x": "player.X",
+						"y": "player.Y"
+					}
+				}
+			],
+			"sid": 2103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 701519325313488
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "levelNum",
+					"sid": 7802142487786613,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 4283117880360396,
+					"parameters": {
+						"variable": "DoubleJump",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 2741956846747482,
+					"parameters": {
+						"variable": "Runner",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 168473862552375
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 127161576704633
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 9581591024346440,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"comparison": 2,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 560500298919116,
+					"parameters": {
+						"variable": "LevelsUnlocked",
+						"value": "0"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 262698405107045,
+					"parameters": {
+						"name": "\"save\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 6055322382990194
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 2518671165821753,
+					"parameters": {
+						"variable": "Music",
+						"comparison": 0,
+						"value": "1"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 8444970857633333
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 5758720265674403,
+					"parameters": {
+						"variable": "Music",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 5283654872638032
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 824575258544337
+				}
+			],
+			"actions": [],
+			"sid": 653737535575221,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-mobile-device",
+							"objectClass": "System",
+							"sid": 706413879068246
+						}
+					],
+					"actions": [],
+					"sid": 318600109800415,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "HelpTXT",
+									"sid": 881054510387570,
+									"parameters": {
+										"unique-id": "1315"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "HelpTXT",
+									"sid": 674731900941369,
+									"parameters": {
+										"text": "\"Use the arrow buttons to move.\""
+									}
+								}
+							],
+							"sid": 556659822866802
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "HelpTXT",
+									"sid": 585041163547409,
+									"parameters": {
+										"unique-id": "1325"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "HelpTXT",
+									"sid": 974207076781870,
+									"parameters": {
+										"text": "\"Tap the circle to jump.\""
+									}
+								}
+							],
+							"sid": 849638407977649
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "HelpTXT",
+									"sid": 691541752112384,
+									"parameters": {
+										"unique-id": "1329"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "HelpTXT",
+									"sid": 676953280565549,
+									"parameters": {
+										"text": "\"The longer the circle is held, the higher you jump!\""
+									}
+								}
+							],
+							"sid": 546225878952687
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 476729329366995
+}

@@ -1,0 +1,3736 @@
+{
+	"name": "LevelSelect",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "LevelsUnlocked",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 6281724129062106
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "FadeE"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 4342619020226037
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 9936467575744260,
+					"parameters": {
+						"variable": "Runner",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "generalTxt",
+					"sid": 581087009500747,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "lvlText",
+					"sid": 6514474649431126,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				}
+			],
+			"sid": 7807902025799014
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 9302121508342140,
+					"parameters": {
+						"object": "backbtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 860138828082214,
+					"parameters": {
+						"name": "\"FadeOut\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 766836927703788,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 126316388585773,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 3473119575979055
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Touch",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 2891460681459446,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 3678708727840763,
+							"parameters": {
+								"text-to-compare": "\"1-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 5472964977055853,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 479169272536082,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 214873884683416,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 8540337931569624,
+							"parameters": {
+								"layout": "Lvl1-1"
+							}
+						}
+					],
+					"sid": 6571002224204926
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 6656959619394961,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1669958328279671,
+							"parameters": {
+								"text-to-compare": "\"1-2\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 7907962202069438,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 249289825401289,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 866827805849959,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 3227786906598485,
+							"parameters": {
+								"layout": "Lvl1-2"
+							}
+						}
+					],
+					"sid": 7251479090102009
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 9117114706234320,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4715741648207984,
+							"parameters": {
+								"text-to-compare": "\"1-3\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6344838614727898,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 711128839753104,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 397336504953541,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 2245270932884722,
+							"parameters": {
+								"layout": "Lvl1-3"
+							}
+						}
+					],
+					"sid": 9210597372787086
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 9002862152915746,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 5070633342184583,
+							"parameters": {
+								"text-to-compare": "\"1-4\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 7802873772069297,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 355115449450789,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 570624356741708,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 4493550344008647,
+							"parameters": {
+								"layout": "Lvl1-4"
+							}
+						}
+					],
+					"sid": 6502310141327491
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 4583802580430224,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 6951403446212605,
+							"parameters": {
+								"text-to-compare": "\"1-5\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6250131954145179,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 185837455572958,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 362396313122379,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 3619731145180317,
+							"parameters": {
+								"layout": "Lvl1-5"
+							}
+						}
+					],
+					"sid": 5079903410265639
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 6873440349029137,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 7335372756136097,
+							"parameters": {
+								"text-to-compare": "\"1-6\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 1883177416008472,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 875555188872660,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 309776203848467,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 5916473658438444,
+							"parameters": {
+								"layout": "Lvl1-6"
+							}
+						}
+					],
+					"sid": 3751690163575245
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 2830817203924688,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 2831889843949042,
+							"parameters": {
+								"text-to-compare": "\"1-7\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 2902049806751615,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 208307019626741,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 192917005756247,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 9737528539019884,
+							"parameters": {
+								"layout": "Lvl1-7"
+							}
+						}
+					],
+					"sid": 1789358179002288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 5538308271294988,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 8086744603575435,
+							"parameters": {
+								"text-to-compare": "\"1-8\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 3168868237786897,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 499483905800272,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 481351598264828,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 2981681072893617,
+							"parameters": {
+								"layout": "Lvl1-8"
+							}
+						}
+					],
+					"sid": 5539898471430539
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 9787760439871124,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4909395768582666,
+							"parameters": {
+								"text-to-compare": "\"1-9\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 743313539217052,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 289154795657851,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 194499895336873,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 7647962102467627,
+							"parameters": {
+								"layout": "Lvl1-9"
+							}
+						}
+					],
+					"sid": 7440820795651001
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 4269415554283252,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 70869896055556,
+							"parameters": {
+								"text-to-compare": "\"1-10\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 4615497154394633,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 333201065967511,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 266934872920742,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 4103529911322798,
+							"parameters": {
+								"layout": "Lvl1-10"
+							}
+						}
+					],
+					"sid": 1079139210439162
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 6609478453234141,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 2884462450856802,
+							"parameters": {
+								"text-to-compare": "\"2-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 5263137455398081,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 666559765059204,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 668539489353681,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 3576872586262017,
+							"parameters": {
+								"layout": "Lvl2-1"
+							}
+						}
+					],
+					"sid": 1973979908247766
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 9323958028685524,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 7412791957197657,
+							"parameters": {
+								"text-to-compare": "\"2-2\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 1511329484277005,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "11"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 591879979679271,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 948284088991663,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 7328851523470871,
+							"parameters": {
+								"layout": "Lvl2-2"
+							}
+						}
+					],
+					"sid": 246463518898723
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 5531517700962715,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4583398999848372,
+							"parameters": {
+								"text-to-compare": "\"2-3\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6851229210104928,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "12"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 115288837066260,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 496837865651591,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 2597734817914893,
+							"parameters": {
+								"layout": "Lvl2-3"
+							}
+						}
+					],
+					"sid": 1268770637105121
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 2936688766282848,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 2122693146302277,
+							"parameters": {
+								"text-to-compare": "\"2-4\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 8675945545398398,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "13"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 965656781128960,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 445380554169617,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 6099674161236639,
+							"parameters": {
+								"layout": "Lvl2-4"
+							}
+						}
+					],
+					"sid": 1612608346245698
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 1572920986470438,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1991874376820871,
+							"parameters": {
+								"text-to-compare": "\"2-5\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 5695682514673098,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "14"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 322878251622606,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 645739651525278,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 4141723329532417,
+							"parameters": {
+								"layout": "Lvl2-5"
+							}
+						}
+					],
+					"sid": 7832891931183467
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 7995301092841033,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 6486120874914848,
+							"parameters": {
+								"text-to-compare": "\"2-6\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 2513231691504612,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 370226522558608,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 220724820793495,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 2621966652284929,
+							"parameters": {
+								"layout": "Lvl2-6"
+							}
+						}
+					],
+					"sid": 9394251511081644
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 1914613989950053,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 5294439134856993,
+							"parameters": {
+								"text-to-compare": "\"2-7\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 1419346764922109,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 604956395806038,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 140622276021834,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 5118970687190288,
+							"parameters": {
+								"layout": "Lvl2-7"
+							}
+						}
+					],
+					"sid": 1566470173142335
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 4356607959441006,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 3018031204282253,
+							"parameters": {
+								"text-to-compare": "\"2-8\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 3163264900237297,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "17"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 642926133639536,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 356612353927892,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 7542556555843831,
+							"parameters": {
+								"layout": "Lvl2-8"
+							}
+						}
+					],
+					"sid": 6860387151293288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 4907872991686776,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 697980597501788,
+							"parameters": {
+								"text-to-compare": "\"2-9\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 9875164076203452,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "18"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 126481790912946,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 184123706490459,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 4147467406229212,
+							"parameters": {
+								"layout": "Lvl2-9"
+							}
+						}
+					],
+					"sid": 971372423136964
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 621650042545595,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4994937895240139,
+							"parameters": {
+								"text-to-compare": "\"2-10\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 3489564527512651,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "19"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 584017956492527,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 675851270039470,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 1983701683351283,
+							"parameters": {
+								"layout": "Lvl2-10"
+							}
+						}
+					],
+					"sid": 72022571925552
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 788155549031347,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 6431039576452581,
+							"parameters": {
+								"text-to-compare": "\"3-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6132433292510993,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 855866101863046,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 730781874341927,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 7777561390503394,
+							"parameters": {
+								"layout": "Lvl3-1"
+							}
+						}
+					],
+					"sid": 4467749703232958
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 6489766885676529,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1903081803868964,
+							"parameters": {
+								"text-to-compare": "\"3-2\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 337955180645674,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "21"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 848972182365411,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 745152960824216,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 7113758876108779,
+							"parameters": {
+								"layout": "Lvl3-2"
+							}
+						}
+					],
+					"sid": 6362741868360689
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 5033076803890766,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 6948047618962626,
+							"parameters": {
+								"text-to-compare": "\"3-3\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 8706398013475859,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "22"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 736029207306519,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 136314630565021,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 4023115434778923,
+							"parameters": {
+								"layout": "Lvl3-3"
+							}
+						}
+					],
+					"sid": 3468392643170313
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 7635592031273705,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4174312245709298,
+							"parameters": {
+								"text-to-compare": "\"3-4\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 7570157992895178,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "23"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 276782572392538,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 211368231374636,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 334708936426635,
+							"parameters": {
+								"layout": "Lvl3-4"
+							}
+						}
+					],
+					"sid": 1215551742185933
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 9374336037900784,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 2071493216289906,
+							"parameters": {
+								"text-to-compare": "\"3-5\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 5598744305679665,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "24"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 953366365599771,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 732399903957900,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 7022192419600127,
+							"parameters": {
+								"layout": "Lvl3-5"
+							}
+						}
+					],
+					"sid": 300937968133487
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 3252179055694985,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 5452932047458033,
+							"parameters": {
+								"text-to-compare": "\"3-6\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6720849035752047,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "25"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 444300060614268,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 712374325894184,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 2828147930877244,
+							"parameters": {
+								"layout": "Lvl3-6"
+							}
+						}
+					],
+					"sid": 2848686774176599
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 607918966437592,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 9555021850802114,
+							"parameters": {
+								"text-to-compare": "\"3-7\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 3044447035214153,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "26"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 914685894797942,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 897706345464620,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 5216522185493495,
+							"parameters": {
+								"layout": "Lvl3-7"
+							}
+						}
+					],
+					"sid": 6441314620458657
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 3003539931922006,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 9063112351360432,
+							"parameters": {
+								"text-to-compare": "\"3-8\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 5228737914629518,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "27"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 140391253731467,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 171184789133539,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 1771259857897929,
+							"parameters": {
+								"layout": "Lvl3-8"
+							}
+						}
+					],
+					"sid": 4289946850978584
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 3745961753413177,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 6845408247593487,
+							"parameters": {
+								"text-to-compare": "\"3-9\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 3868126224311266,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "28"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 740268124913935,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 720419391566841,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 3442898746933153,
+							"parameters": {
+								"layout": "Lvl3-9"
+							}
+						}
+					],
+					"sid": 6294670352601209
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 613490259360153,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 757925654107904,
+							"parameters": {
+								"text-to-compare": "\"3-10\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 4968077890159295,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "29"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 291692033113694,
+							"parameters": {
+								"name": "\"FadeOut\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 126169151208675,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 7464673869856442,
+							"parameters": {
+								"layout": "Lvl3-10"
+							}
+						}
+					],
+					"sid": 8528718032490607
+				}
+			],
+			"sid": 2957776322099832
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Unlock",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 5543413941442024
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 7371598186110252,
+							"parameters": {
+								"text-to-compare": "\"1-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7303487921748939,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 7057798876370166,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 4122407680571047
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 8529241276607152,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 2671154007385437
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 9137875726622608
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 8396514767030044,
+							"parameters": {
+								"text-to-compare": "\"1-2\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 892169726561938,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6420713761949425,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 106818662153344
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 2810155342725086,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 5856965075596781
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 5126176143221866
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 7413011089038806,
+							"parameters": {
+								"text-to-compare": "\"1-3\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 9185845216097216,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 7241701485060528,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 7907028477956503
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 3394673887870427,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 8091383528344605
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 522778725799821
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 3510041751871048,
+							"parameters": {
+								"text-to-compare": "\"1-4\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 5270943982621674,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 1020840081325746,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "03"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 7842868181268903
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 9785531206038644,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 5609788119642015
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 695151890625691
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 8605751519627721,
+							"parameters": {
+								"text-to-compare": "\"1-5\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7825328038214763,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6557286359314414,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "04"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 4198052937934928
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 6828805137170016,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 6741650097888994
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 1661286626656955
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1043368926558744,
+							"parameters": {
+								"text-to-compare": "\"1-6\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7693390869091572,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 1638153571644418,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "05"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 7429985242469132
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 3429364132313671,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 1346661090975914
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 5346938294777289
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4673550640395314,
+							"parameters": {
+								"text-to-compare": "\"1-7\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 2976397989457286,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 7737944722097838,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "06"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 1808653988406771
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 6728394858112636,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 4471613126885323
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 7294347054084957
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 9330091400403668,
+							"parameters": {
+								"text-to-compare": "\"1-8\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 6665642621703804,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 3126688382858308,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "07"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 9187782804598022
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 3638926224847648,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 8233087572294535
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 4657621286118194
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 356544612076383,
+							"parameters": {
+								"text-to-compare": "\"1-9\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 4329867544488894,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 9766584066632424,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "08"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 1397727178375279
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 4096540511666211,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 6211298393561655
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 2155686499991253
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1376847805618788,
+							"parameters": {
+								"text-to-compare": "\"1-10\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 4861388382740871,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 4983468058401675,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "09"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 3301021096747266
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 8019829059132178,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 5697574844838181
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 8267994225772228
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 5202066575543355,
+							"parameters": {
+								"text-to-compare": "\"2-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 1593531172962633,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 4386336116816127,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 8391449045935278
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 9105122003273256,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 7001219457379273
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 7996370972986008
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1369105853073518,
+							"parameters": {
+								"text-to-compare": "\"2-2\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 6019619754784906,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 2969585223056674,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "11"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 7556028760687086
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 8969156456514945,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 6416546138018099
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 6315786508149529
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 8231098588259294,
+							"parameters": {
+								"text-to-compare": "\"2-3\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 3053209700730492,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 4816856054936706,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "12"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 789222485643541
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 608263633774674,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 9409469230729508
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 4208090054314658
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 8364926832788864,
+							"parameters": {
+								"text-to-compare": "\"2-4\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7042642455984075,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6241165466035756,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "13"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 8272410147696226
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 9532063805764776,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 8784320067131704
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 3330860290054636
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1138486624152577,
+							"parameters": {
+								"text-to-compare": "\"2-5\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 14711538775701,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 1754369766738664,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "14"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 6635367282156553
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 2896415099204256,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 1470628707101418
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 8083118464469657
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4084041416290801,
+							"parameters": {
+								"text-to-compare": "\"2-6\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 3430781307297901,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 4940038754275251,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 2235148425268239
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 7386209335614792,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 6601839982313894
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 4866664578779485
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 265267862367357,
+							"parameters": {
+								"text-to-compare": "\"2-7\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7854324555929845,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 8999077846144219,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 5493353678830775
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 910657712032959,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 8635164037902096
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 5077063801568028
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 7122630439136395,
+							"parameters": {
+								"text-to-compare": "\"2-8\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 6726822315200044,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 8862534820583272,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "17"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 2617288627355589
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 4453612539967894,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 7991183505035802
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 2168542964454227
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1604393226651543,
+							"parameters": {
+								"text-to-compare": "\"2-9\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 8210458065396202,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 1245120260678998,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "18"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 8971724807578912
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 3403017210303159,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 7383605398102216
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 7446512315570778
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4908099160431981,
+							"parameters": {
+								"text-to-compare": "\"2-10\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7473061775060303,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 5843161041558742,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "19"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 9802259275550624
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 2563156400840011,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 2717532577091918
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 3398011201853319
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1602695107349978,
+							"parameters": {
+								"text-to-compare": "\"3-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 8771471065256472,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 33011204508511,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 3487853498302729
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 6898644546518275,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 2514668899501356
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 2746805300397474
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 4914546386902692,
+							"parameters": {
+								"text-to-compare": "\"3-2\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7663496681885196,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 925963156252525,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "21"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 7580218071741652
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 7294093404539475,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 8782920582409208
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 1394146481361964
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 6544120073998632,
+							"parameters": {
+								"text-to-compare": "\"3-3\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7572986860139198,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 8513381633977119,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "22"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 1707065867896663
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 4691163184334651,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 1433115867698979
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 2291428434604821
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 2138921698600296,
+							"parameters": {
+								"text-to-compare": "\"3-4\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 9101756477660400,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 4352881187765688,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "23"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 7171821006376053
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 9222079696996780,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 6335551300823473
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 8449164555710384
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 1167553002923444,
+							"parameters": {
+								"text-to-compare": "\"3-5\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 3108147413486416,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 5755072133689558,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "24"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 9547872856809428
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 9959013184779632,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 7492777750094435
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 7957377521714793
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 5156702137182556,
+							"parameters": {
+								"text-to-compare": "\"3-6\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7892937173491448,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 200531121819108,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "25"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 210638889456616
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 218505331672312,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 2722683509194344
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 3066909698512819
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 6573581746956828,
+							"parameters": {
+								"text-to-compare": "\"3-7\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 8911235096588582,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 3372092155614886,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "26"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 73802840806765
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 4786750780411556,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 7893429455362669
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 906083685385783
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 3748094891278375,
+							"parameters": {
+								"text-to-compare": "\"3-8\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 9656407698189532,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 9112300163413200,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "27"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 5750031601374434
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 5105246439189001,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 3844129389155454
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 6121569773194549
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 8011491696967906,
+							"parameters": {
+								"text-to-compare": "\"3-9\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 7585684958952101,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 4833322791171155,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "28"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 6928714838373637
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 2385866367130284,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 4422642626419395
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 9797846375952056
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 6212082636432446,
+							"parameters": {
+								"text-to-compare": "\"3-10\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lock",
+							"sid": 9863609456201586,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 5871757632990935,
+							"parameters": {
+								"variable": "LevelsUnlocked",
+								"comparison": 5,
+								"value": "29"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "lock",
+							"sid": 2170250540792876
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 5595660514237215,
+							"parameters": {
+								"color": "rgb(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 7384753504891644
+				}
+			],
+			"sid": 5311347464658645
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Gamepad",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 5347333892006397,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-b"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 6823368924689474,
+							"parameters": {
+								"layout": "LevelSelect1"
+							}
+						}
+					],
+					"sid": 5754312258708338
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 7976849612805805,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-a"
+							}
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 9239046398619668,
+							"parameters": {
+								"text-to-compare": "\"1-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 2988879023042136,
+							"parameters": {
+								"layout": "Lvl1-1"
+							}
+						}
+					],
+					"sid": 3610923910238133
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 3918656116522845
+						},
+						{
+							"id": "has-gamepads",
+							"objectClass": "Gamepad",
+							"sid": 5430033124866454
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 8645138507265497,
+							"parameters": {
+								"text-to-compare": "\"1-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "marker",
+							"sid": 9052092823920102,
+							"parameters": {
+								"x": "lvlText.X",
+								"y": "lvlText.Y"
+							}
+						}
+					],
+					"sid": 559762793340313
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-gamepad-connected",
+							"objectClass": "Gamepad",
+							"sid": 6793675538239215
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "lvlText",
+							"sid": 9726871975956488,
+							"parameters": {
+								"text-to-compare": "\"1-1\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "marker",
+							"sid": 4260006171683738,
+							"parameters": {
+								"x": "lvlText.X",
+								"y": "lvlText.Y"
+							}
+						}
+					],
+					"sid": 2540279578585732
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 6270286309890707
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "marker",
+							"sid": 1083635070412741,
+							"parameters": {
+								"angle": "marker.Angle + 120*dt"
+							}
+						}
+					],
+					"sid": 4133494117410196
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "marker",
+							"sid": 4987902572287739,
+							"parameters": {
+								"x": "lvlText.X",
+								"y": "lvlText.Y"
+							}
+						}
+					],
+					"sid": 9312115240803504
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "marker",
+							"sid": 1713887484649826,
+							"parameters": {
+								"x": "lvlText.X",
+								"y": "lvlText.Y"
+							}
+						}
+					],
+					"sid": 9157907140458096
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-axis",
+							"objectClass": "Gamepad",
+							"sid": 5900429438190847,
+							"parameters": {
+								"gamepad": "0",
+								"axis": "left-analog-x-axis",
+								"comparison": 4,
+								"value": "70"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 1471012023625218
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-axis",
+							"objectClass": "Gamepad",
+							"sid": 3264526685463905,
+							"parameters": {
+								"gamepad": "0",
+								"axis": "left-analog-x-axis",
+								"comparison": 2,
+								"value": "-70"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 5114749159058572
+				}
+			],
+			"sid": 9890697283686148
+		}
+	],
+	"sid": 388722299353402
+}

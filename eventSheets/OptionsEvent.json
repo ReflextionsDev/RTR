@@ -1,0 +1,851 @@
+{
+	"name": "OptionsEvent",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "FadeE"
+		},
+		{
+			"eventType": "variable",
+			"name": "MusicLvl",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 3579720194266745
+		},
+		{
+			"eventType": "variable",
+			"name": "SoundLvl",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 123583350896003
+		},
+		{
+			"eventType": "variable",
+			"name": "MusicVolume",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 541077189492063
+		},
+		{
+			"eventType": "variable",
+			"name": "SoundVolume",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 637117847485656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 1429726699949903
+				}
+			],
+			"actions": [
+				{
+					"id": "set-web-font",
+					"objectClass": "generalTxt",
+					"sid": 5626621625762586,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "musicLvl",
+					"sid": 133309926196908,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "Fullscreen",
+					"sid": 3897881809786717,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "set-web-font",
+					"objectClass": "soundLvl",
+					"sid": 201912806286292,
+					"parameters": {
+						"family-name": "\"mathletebulky\"",
+						"css-url": "\"stylesheet.css\""
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 404693275223166,
+					"parameters": {
+						"name": "\"FadeIn2\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 6672897026621259,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-mobile-device",
+							"objectClass": "System",
+							"sid": 460325479838027
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Fullscreen",
+							"sid": 935352718591769
+						}
+					],
+					"sid": 214148850554387
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 6478723925809368,
+					"parameters": {
+						"object": "backbtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 202695827797455,
+					"parameters": {
+						"name": "\"FadeOut\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 348983358649090,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 5890106333274281,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 1565733830438715
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 9438807626003054,
+					"parameters": {
+						"object": "Fullscreen"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 3159332156996941,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-fullscreen",
+							"objectClass": "Browser",
+							"sid": 4985602167274842,
+							"isInverted": true
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 4601274204855474
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 645724542958995,
+							"parameters": {
+								"name": "\"fullscreenON\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 6801260633335444
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-fullscreen",
+							"objectClass": "Browser",
+							"sid": 3354095072329582
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 5518942990025346
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 9924325236398328,
+							"parameters": {
+								"name": "\"fullscreenOFF\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 4490149669005257
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 233969349574949,
+					"parameters": {
+						"name": "\"fullscreenON\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 7745102773264005,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Browser",
+					"sid": 2521481867351585,
+					"parameters": {
+						"mode": "stretch-scale-outer",
+						"navigation-ui": "auto"
+					}
+				},
+				{
+					"id": "maximize",
+					"objectClass": "NWjs",
+					"sid": 231467275249806
+				}
+			],
+			"sid": 7474837147528557
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 1638881746577196,
+					"parameters": {
+						"name": "\"fullscreenOFF\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 7939607915227237,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "cancel-fullscreen",
+					"objectClass": "Browser",
+					"sid": 7166332386782501
+				},
+				{
+					"id": "unmaximize",
+					"objectClass": "NWjs",
+					"sid": 784891087209757
+				}
+			],
+			"sid": 4449926068982608
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Clouds",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 1170,
+							"parameters": {
+								"interval-seconds": "random(4,8)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 1171,
+							"parameters": {
+								"object-to-create": "cloud",
+								"layer": "0",
+								"x": "random(900,1200)",
+								"y": "random(50,500)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 1169
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 1173
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 1174,
+							"parameters": {
+								"object": "cloud"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloud",
+							"sid": 1175,
+							"parameters": {
+								"frame-number": "random(0,4)"
+							}
+						}
+					],
+					"sid": 1172
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "cloud",
+							"sid": 1177
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloud",
+							"sid": 1178,
+							"parameters": {
+								"frame-number": "random(0,4)"
+							}
+						}
+					],
+					"sid": 1176
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "cloud",
+							"sid": 1613,
+							"parameters": {
+								"object": "outside"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "cloud",
+							"sid": 1614
+						}
+					],
+					"sid": 1612
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 1951
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "cloud",
+							"sid": 1952,
+							"parameters": {
+								"x": "cloud.X - 90*dt",
+								"y": "cloud.Y"
+							}
+						}
+					],
+					"sid": 1950
+				}
+			],
+			"sid": 1392908080516703
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 278385229291227,
+					"parameters": {
+						"name": "\"Audio\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 520780062552812,
+					"parameters": {
+						"key": "\"MusicLvl\"",
+						"value": "MusicLvl"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "musicLvl",
+					"sid": 365234989214496,
+					"parameters": {
+						"text": "MusicLvl"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 602502520707516,
+					"parameters": {
+						"variable": "MusicVolume",
+						"value": "(MusicLvl*2)-20"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 310278351805985,
+					"parameters": {
+						"key": "\"SoundLvl\"",
+						"value": "SoundLvl"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "soundLvl",
+					"sid": 588012223140529,
+					"parameters": {
+						"text": "SoundLvl"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 590487451168424,
+					"parameters": {
+						"variable": "SoundVolume",
+						"value": "(SoundLvl*2)-20"
+					}
+				}
+			],
+			"sid": 231177939626835,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 445464495725647,
+							"parameters": {
+								"variable": "MusicLvl",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 491635692932123,
+							"parameters": {
+								"variable": "MusicVolume",
+								"value": "-100"
+							}
+						}
+					],
+					"sid": 155305239198988
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 685252620220341,
+							"parameters": {
+								"variable": "SoundLvl",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 128069122103871,
+							"parameters": {
+								"variable": "SoundVolume",
+								"value": "(SoundLvl*2)-20"
+							}
+						}
+					],
+					"sid": 393942951426765
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-volume",
+							"objectClass": "Audio",
+							"sid": 603799643069475,
+							"parameters": {
+								"tag": "\"BGM\"",
+								"db": "MusicVolume"
+							}
+						}
+					],
+					"sid": 693537882275348
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MusicSettings",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 9514632961363576
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 6639533979336715,
+							"parameters": {
+								"name": "\"Audio\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 9645640035306220
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 3326289105994005,
+							"parameters": {
+								"object": "MusicLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 7530253264636773,
+							"parameters": {
+								"variable": "MusicLvl",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 714660064224861,
+							"parameters": {
+								"variable": "MusicLvl",
+								"value": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 8466224072015524,
+							"parameters": {
+								"name": "\"Audio\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 3545177945048137
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 8704946166197569,
+							"parameters": {
+								"object": "MusicRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 6998724274134412,
+							"parameters": {
+								"variable": "MusicLvl",
+								"comparison": 2,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 1719759961354225,
+							"parameters": {
+								"variable": "MusicLvl",
+								"value": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 8927659625549645,
+							"parameters": {
+								"name": "\"Audio\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 4159427420727643
+				}
+			],
+			"sid": 1324080898256834
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SoundSettings",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 856100092863074,
+							"parameters": {
+								"variable": "SoundLvl",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-master-volume",
+							"objectClass": "Audio",
+							"sid": 876909009184095,
+							"parameters": {
+								"db": "-100"
+							}
+						}
+					],
+					"sid": 384020253721311
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 734490597080482
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 204143252387270,
+							"parameters": {
+								"name": "\"Audio\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 352038999655349
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 303600625420374,
+							"parameters": {
+								"object": "SoundLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 446459863643430,
+							"parameters": {
+								"variable": "SoundLvl",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 687891900227598,
+							"parameters": {
+								"variable": "SoundLvl",
+								"value": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 734209972003914,
+							"parameters": {
+								"name": "\"Audio\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 125139845436047
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 705060562425135,
+							"parameters": {
+								"object": "SoundRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 810927200698626,
+							"parameters": {
+								"variable": "SoundLvl",
+								"comparison": 2,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 111925749333789,
+							"parameters": {
+								"variable": "SoundLvl",
+								"value": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 400914500197633,
+							"parameters": {
+								"name": "\"Audio\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 781320171885872
+				}
+			],
+			"sid": 787233671579975
+		}
+	],
+	"sid": 355745722876093
+}

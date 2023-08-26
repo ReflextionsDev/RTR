@@ -1,0 +1,140 @@
+{
+	"name": "LoadingE",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 903667672533873
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "loadingSprite",
+					"sid": 675023190888431,
+					"parameters": {
+						"x": "Loading.X",
+						"y": "Loading.Y"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 3933994983835761,
+					"parameters": {
+						"audio-file": "Kubbi - Sleet - 07 Planet III (Mesosphere)"
+					}
+				}
+			],
+			"sid": 1408164341871929
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 614805854000135
+				}
+			],
+			"actions": [],
+			"sid": 622863172624318,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 209747062724559,
+							"parameters": {
+								"first-value": "loadingprogress",
+								"comparison": 2,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "Loading",
+							"sid": 934576148515832,
+							"parameters": {
+								"width": "loadingprogress*650"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "loadingSprite",
+							"sid": 848652333677850,
+							"parameters": {
+								"x": "lerp(Self.X,Loading.X + Loading.Width + 10,0.03) - 5",
+								"y": "Loading.Y - 30"
+							}
+						}
+					],
+					"sid": 484299573364844
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 760785967936951
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "Loading",
+							"sid": 252381481229125,
+							"parameters": {
+								"width": "loadingprogress*650"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "loadingSprite",
+							"sid": 531267283861800,
+							"parameters": {
+								"x": "lerp(Self.X,Loading.X + Loading.Width + 10,0.03) + 10",
+								"y": "Loading.Y - 30"
+							}
+						}
+					],
+					"sid": 545754183648924
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "loadingSprite",
+					"sid": 815453190116229,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "Loading.X + Loading.Width + 20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 1314508527937381,
+					"parameters": {
+						"layout": "FontLoader"
+					}
+				}
+			],
+			"sid": 833315276621550
+		}
+	],
+	"sid": 985400385338334
+}

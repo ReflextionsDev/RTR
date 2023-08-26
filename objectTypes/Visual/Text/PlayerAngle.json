@@ -1,0 +1,9 @@
+{
+	"name": "PlayerAngle",
+	"plugin-id": "Text",
+	"sid": 46,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

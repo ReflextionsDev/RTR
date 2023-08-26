@@ -1,0 +1,43 @@
+{
+	"name": "Sprite8",
+	"plugin-id": "Sprite",
+	"sid": 510491910598002,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 687868020782961
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 237,
+						"height": 551,
+						"originX": 0.434599,
+						"originY": 0.874773,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4334117,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 550215986342960,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

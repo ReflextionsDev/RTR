@@ -1,0 +1,15 @@
+{
+	"name": "generalTxt",
+	"plugin-id": "Text",
+	"sid": 5595845168475487,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 6008814998236971
+		}
+	],
+	"effectTypes": []
+}
