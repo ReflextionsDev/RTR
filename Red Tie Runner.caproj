@@ -32,7 +32,6 @@
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Rex.Rainbow" id="Rex_Rotate" version="1">Rotate</behavior>
-        <behavior author="Rex.Rainbow" id="Rex_Swing" version="1">Swing</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -716,11 +715,6 @@
                 <instance-variables>
                     <instance-variable name="squished" sid="229764218617071" type="boolean" />
                 </instance-variables>
-                <behaviors>
-                    <behavior-type name="Swing" sid="100494510952884">
-                        <behavior id="Rex_Swing" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="9" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="648961788120582" speed="15">
                         <frame duration="1" hotspotX="0.734694" hotspotY="0.170213">
