@@ -701,18 +701,6 @@
                     <instance-variables>
                         <squished>false</squished>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Swing">
-                            <properties>
-                                <activated>No</activated>
-                                <start-angle>0</start-angle>
-                                <rotation-angle>20</rotation-angle>
-                                <max-speed>20</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
