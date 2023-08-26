@@ -128,8 +128,17 @@
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 1314508527937381,
+					"disabled": true,
 					"parameters": {
 						"layout": "FontLoader"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 606217001418170,
+					"parameters": {
+						"layout": "Menu"
 					}
 				}
 			],
