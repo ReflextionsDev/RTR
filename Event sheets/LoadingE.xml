@@ -15,7 +15,6 @@
                 <action id="4" name="Preload" sid="3933994983835761" type="Audio">
                     <param id="0" name="Audio file">Kubbi - Sleet - 07 Planet III (Mesosphere)</param>
                 </action>
-                <action disabled="1" id="4" name="Clear local storage" sid="635123232325262" type="WebStorage" />
             </actions>
         </event-block>
         <event-block sid="622863172624318">

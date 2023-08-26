@@ -13,9 +13,9 @@
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="CJSAds" version="1">CocoonJS</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -716,9 +716,6 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
-            </object-type>
-            <object-type name="CocoonJS" sid="8273069850146107">
-                <plugin id="CJSAds" />
             </object-type>
             <object-type name="loadingSprite" sid="307010505875783">
                 <plugin id="Sprite" />
@@ -3318,6 +3315,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LocalStorage" sid="280204350866717">
+            <plugin id="LocalStorage" />
+        </object-type>
     </object-folder>
     <families>
         <family name="HUD_objects" plugin-id="Sprite" sid="1299712665550803">
@@ -3474,15 +3474,10 @@
             </properties>
         </global-instance>
         <global-instance type="WebStorage" uid="3994" />
-        <global-instance type="CocoonJS" uid="0">
-            <properties>
-                <store-mode>Unmanaged</store-mode>
-                <store-sandbox>Enabled</store-sandbox>
-            </properties>
-        </global-instance>
         <global-instance type="Browser" uid="101" />
         <global-instance type="NWjs" uid="111" />
         <global-instance type="Mouse" uid="3007" />
+        <global-instance type="LocalStorage" uid="0" />
     </global-instances>
     <sounds-folder>
         <file name="Fall.m4a" />

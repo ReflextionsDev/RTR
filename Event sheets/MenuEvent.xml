@@ -114,109 +114,207 @@
                             <param id="0" name="Variable">LevelsUnlocked</param>
                             <param id="1" name="Value">30</param>
                         </action>
-                        <action id="-9" name="Set value" sid="7898646179910823" type="System">
-                            <param id="0" name="Variable">LevelsUnlocked</param>
-                            <param id="1" name="Value">int(WebStorage.LocalValue(&quot;lvlunlock&quot;))</param>
+                        <action id="5" name="Check item exists" sid="346135126929042" type="LocalStorage">
+                            <param id="0" name="Key">&quot;lvlunlock&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="402778938052657" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Musiclvl&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="131914650985824" type="LocalStorage">
+                            <param id="0" name="Key">&quot;SoundLvl&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Levels</comment>
+        <event-block sid="893886888496213">
+            <conditions>
+                <condition id="9" name="On item exists" sid="748794111575895" type="LocalStorage">
+                    <param id="0" name="Key">&quot;lvlunlock&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="102317705417581" type="LocalStorage">
+                    <param id="0" name="Key">&quot;lvlunlock&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="666084001926521">
+            <conditions>
+                <condition id="1" name="On item get" sid="730219539335286" type="LocalStorage">
+                    <param id="0" name="Key">&quot;lvlunlock&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="558295731006417" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Value">int(LocalStorage.ItemValue)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="382265155000153">
+            <conditions>
+                <condition id="10" name="On item missing" sid="469850157826764" type="LocalStorage">
+                    <param id="0" name="Key">&quot;lvlunlock&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="744769020967479" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Music</comment>
+        <event-block sid="290261859184812">
+            <conditions>
+                <condition id="9" name="On item exists" sid="412859515050522" type="LocalStorage">
+                    <param id="0" name="Key">&quot;MusicLvl&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="479014785288665" type="LocalStorage">
+                    <param id="0" name="Key">&quot;MusicLvl&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="744001197118828">
+            <conditions>
+                <condition id="1" name="On item get" sid="503459152483939" type="LocalStorage">
+                    <param id="0" name="Key">&quot;MusicLvl&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="762770896238384" type="System">
+                    <param id="0" name="Variable">MusicLvl</param>
+                    <param id="1" name="Value">int(LocalStorage.ItemValue)</param>
+                </action>
+                <action id="0" name="Call function" sid="465233914941886" type="Function">
+                    <param id="0" name="Name">&quot;update_audio&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="635354145027209">
+            <conditions>
+                <condition id="10" name="On item missing" sid="431235886493399" type="LocalStorage">
+                    <param id="0" name="Key">&quot;MusicLvl&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="615591300040381" type="System">
+                    <param id="0" name="Variable">MusicLvl</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="0" name="Call function" sid="393854778529174" type="Function">
+                    <param id="0" name="Name">&quot;update_audio&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Sound</comment>
+        <event-block sid="399358310737823">
+            <conditions>
+                <condition id="9" name="On item exists" sid="466332276392731" type="LocalStorage">
+                    <param id="0" name="Key">&quot;SoundLvl&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="462785643819526" type="LocalStorage">
+                    <param id="0" name="Key">&quot;SoundLvl&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="170946691940434">
+            <conditions>
+                <condition id="1" name="On item get" sid="227195898358402" type="LocalStorage">
+                    <param id="0" name="Key">&quot;SoundLvl&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="985716046535670" type="System">
+                    <param id="0" name="Variable">SoundLvl</param>
+                    <param id="1" name="Value">int(LocalStorage.ItemValue)</param>
+                </action>
+                <action id="0" name="Call function" sid="156885256275171" type="Function">
+                    <param id="0" name="Name">&quot;update_audio&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="764090696552106">
+            <conditions>
+                <condition id="10" name="On item missing" sid="976648339768496" type="LocalStorage">
+                    <param id="0" name="Key">&quot;SoundLvl&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="252503026627276" type="System">
+                    <param id="0" name="Variable">SoundLvl</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Call function" sid="893350009512038" type="Function">
+                    <param id="0" name="Name">&quot;update_audio&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="699380056886548">
+            <conditions>
+                <condition id="0" name="On function" sid="879591516207708" type="Function">
+                    <param id="0" name="Name">&quot;update_audio&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="754070938436195">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="897366313722638" type="System">
+                            <param id="0" name="Variable">MusicVolume</param>
+                            <param id="1" name="Value">(MusicLvl*2)-20</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="670444865841715" type="System">
+                            <param id="0" name="Variable">SoundVolume</param>
+                            <param id="1" name="Value">(SoundLvl*2)-20</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="167151263999030">
+                        <event-block sid="299854173073916">
                             <conditions>
-                                <condition id="3" name="Local key exists" sid="102128219707901" type="WebStorage">
-                                    <param id="0" name="Key">&quot;MusicLvl&quot;</param>
+                                <condition id="-14" name="Compare variable" sid="815842807059396" type="System">
+                                    <param id="0" name="Variable">MusicLvl</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="536336127844825" type="System">
-                                    <param id="0" name="Variable">MusicLvl</param>
-                                    <param id="1" name="Value">int(WebStorage.LocalValue(&quot;MusicLvl&quot;))</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="961085238409814">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="617572933612622" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="117673568683186" type="System">
-                                    <param id="0" name="Variable">MusicLvl</param>
-                                    <param id="1" name="Value">6</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="164734009958433">
-                            <conditions>
-                                <condition id="3" name="Local key exists" sid="728080314631556" type="WebStorage">
-                                    <param id="0" name="Key">&quot;SoundLvl&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="550678772271399" type="System">
-                                    <param id="0" name="Variable">SoundLvl</param>
-                                    <param id="1" name="Value">int(WebStorage.LocalValue(&quot;SoundLvl&quot;))</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="676497859741021">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="132129513971435" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="922234726868529" type="System">
-                                    <param id="0" name="Variable">SoundLvl</param>
-                                    <param id="1" name="Value">10</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="720145549389235">
-                            <conditions />
-                            <actions>
-                                <action id="-9" name="Set value" sid="941249645062202" type="System">
+                                <action id="-9" name="Set value" sid="194180645765000" type="System">
                                     <param id="0" name="Variable">MusicVolume</param>
-                                    <param id="1" name="Value">(MusicLvl*2)-20</param>
+                                    <param id="1" name="Value">-100</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="166808815710576" type="System">
+                            </actions>
+                        </event-block>
+                        <event-block sid="483333398382160">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="638553661659384" type="System">
+                                    <param id="0" name="Variable">SoundLvl</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="246261498511981" type="System">
                                     <param id="0" name="Variable">SoundVolume</param>
                                     <param id="1" name="Value">(SoundLvl*2)-20</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="899765231895537">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="497672720421942" type="System">
-                                            <param id="0" name="Variable">MusicLvl</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="447047109335485" type="System">
-                                            <param id="0" name="Variable">MusicVolume</param>
-                                            <param id="1" name="Value">-100</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="101530094883222">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="415856981786866" type="System">
-                                            <param id="0" name="Variable">SoundLvl</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="664852312009247" type="System">
-                                            <param id="0" name="Variable">SoundVolume</param>
-                                            <param id="1" name="Value">(SoundLvl*2)-20</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-group>
+        </event-block>
         <event-group description="" sid="5697672971818275" title="Clouds">
             <sub-events>
                 <event-block sid="1169">
