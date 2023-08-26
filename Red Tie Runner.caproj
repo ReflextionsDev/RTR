@@ -31,7 +31,6 @@
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Rex.Rainbow" id="Rex_Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -2291,9 +2290,6 @@
                 <behaviors>
                     <behavior-type name="Solid" sid="153">
                         <behavior id="solid" />
-                    </behavior-type>
-                    <behavior-type name="Rotate" sid="154">
-                        <behavior id="Rex_Rotate" />
                     </behavior-type>
                     <behavior-type name="Physics" sid="155">
                         <behavior id="Physics" />
