@@ -1,0 +1,1700 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelSelect</name>
+    <events>
+        <variable constant="0" name="LevelsUnlocked" sid="6281724129062106" static="0" type="number">0</variable>
+        <include>FadeE</include>
+        <event-block sid="7807902025799014">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4342619020226037" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9936467575744259" type="System">
+                    <param id="0" name="Variable">Runner</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="5" name="Set web font" sid="581087009500747" type="generalTxt">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="6514474649431126" type="lvlText">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3473119575979055">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9302121508342141" type="Touch">
+                    <param id="0" name="Object">backbtn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="860138828082214" type="Function">
+                    <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="766836927703788" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="126316388585773" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="2957776322099832" title="Touch">
+            <sub-events>
+                <event-block sid="6571002224204926">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="2891460681459446" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="3678708727840763" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5472964977055853" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="479169272536082" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="214873884683416" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="8540337931569624" type="System">
+                            <param id="0" name="Layout">Lvl1-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7251479090102009">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="6656959619394961" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="1669958328279671" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-2&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7907962202069438" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="249289825401289" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="866827805849959" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3227786906598485" type="System">
+                            <param id="0" name="Layout">Lvl1-2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9210597372787086">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9117114706234319" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="4715741648207984" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-3&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6344838614727898" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="711128839753104" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="397336504953541" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2245270932884722" type="System">
+                            <param id="0" name="Layout">Lvl1-3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6502310141327491">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9002862152915746" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="5070633342184583" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-4&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7802873772069297" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="355115449450789" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="570624356741708" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4493550344008647" type="System">
+                            <param id="0" name="Layout">Lvl1-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5079903410265639">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="4583802580430224" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="6951403446212605" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-5&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6250131954145179" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="185837455572958" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="362396313122379" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3619731145180317" type="System">
+                            <param id="0" name="Layout">Lvl1-5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3751690163575245">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="6873440349029137" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="7335372756136097" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-6&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1883177416008472" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="875555188872660" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="309776203848467" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="5916473658438444" type="System">
+                            <param id="0" name="Layout">Lvl1-6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1789358179002288">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="2830817203924688" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="2831889843949042" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-7&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="2902049806751615" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="208307019626741" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="192917005756247" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="9737528539019884" type="System">
+                            <param id="0" name="Layout">Lvl1-7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5539898471430539">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="5538308271294988" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="8086744603575435" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-8&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3168868237786897" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="499483905800272" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="481351598264828" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2981681072893617" type="System">
+                            <param id="0" name="Layout">Lvl1-8</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7440820795651001">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9787760439871125" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="4909395768582666" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-9&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="743313539217052" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="289154795657851" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="194499895336873" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7647962102467627" type="System">
+                            <param id="0" name="Layout">Lvl1-9</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1079139210439162">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="4269415554283252" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="70869896055556" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-10&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4615497154394633" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="333201065967511" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="266934872920742" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4103529911322798" type="System">
+                            <param id="0" name="Layout">Lvl1-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1973979908247766">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="6609478453234141" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="2884462450856802" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5263137455398081" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="666559765059204" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="668539489353681" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3576872586262017" type="System">
+                            <param id="0" name="Layout">Lvl2-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="246463518898723">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9323958028685523" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="7412791957197657" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-2&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1511329484277005" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="591879979679271" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="948284088991663" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7328851523470871" type="System">
+                            <param id="0" name="Layout">Lvl2-2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1268770637105121">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="5531517700962715" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="4583398999848372" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-3&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6851229210104928" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="115288837066260" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="496837865651591" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2597734817914893" type="System">
+                            <param id="0" name="Layout">Lvl2-3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1612608346245698">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="2936688766282848" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="2122693146302277" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-4&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="8675945545398398" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="965656781128960" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="445380554169617" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="6099674161236639" type="System">
+                            <param id="0" name="Layout">Lvl2-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7832891931183467">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="1572920986470438" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="1991874376820871" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-5&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5695682514673098" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="322878251622606" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="645739651525278" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4141723329532417" type="System">
+                            <param id="0" name="Layout">Lvl2-5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9394251511081644">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="7995301092841033" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="6486120874914848" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-6&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="2513231691504612" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="370226522558608" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="220724820793495" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2621966652284929" type="System">
+                            <param id="0" name="Layout">Lvl2-6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1566470173142335">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="1914613989950053" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="5294439134856993" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-7&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1419346764922109" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="604956395806038" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="140622276021834" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="5118970687190288" type="System">
+                            <param id="0" name="Layout">Lvl2-7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6860387151293288">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="4356607959441006" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="3018031204282253" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-8&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3163264900237297" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="642926133639536" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="356612353927892" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7542556555843831" type="System">
+                            <param id="0" name="Layout">Lvl2-8</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="971372423136964">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="4907872991686776" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="697980597501788" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-9&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="9875164076203452" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="126481790912946" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="184123706490459" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4147467406229212" type="System">
+                            <param id="0" name="Layout">Lvl2-9</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="72022571925552">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="621650042545595" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="4994937895240139" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-10&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3489564527512651" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="584017956492527" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="675851270039470" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="1983701683351283" type="System">
+                            <param id="0" name="Layout">Lvl2-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4467749703232958">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="788155549031347" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="6431039576452581" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6132433292510993" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="855866101863046" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="730781874341927" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7777561390503394" type="System">
+                            <param id="0" name="Layout">Lvl3-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6362741868360689">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="6489766885676529" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="1903081803868964" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-2&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="337955180645674" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="848972182365411" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="745152960824216" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7113758876108779" type="System">
+                            <param id="0" name="Layout">Lvl3-2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3468392643170313">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="5033076803890766" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="6948047618962626" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-3&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="8706398013475859" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="736029207306519" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="136314630565021" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4023115434778923" type="System">
+                            <param id="0" name="Layout">Lvl3-3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1215551742185933">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="7635592031273705" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="4174312245709298" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-4&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7570157992895178" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="276782572392538" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="211368231374636" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="334708936426635" type="System">
+                            <param id="0" name="Layout">Lvl3-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="300937968133487">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9374336037900784" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="2071493216289906" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-5&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5598744305679665" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="953366365599771" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="732399903957900" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7022192419600127" type="System">
+                            <param id="0" name="Layout">Lvl3-5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2848686774176599">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="3252179055694985" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="5452932047458033" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-6&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6720849035752047" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="444300060614268" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="712374325894184" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2828147930877244" type="System">
+                            <param id="0" name="Layout">Lvl3-6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6441314620458657">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="607918966437592" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="9555021850802114" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-7&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3044447035214153" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="914685894797942" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="897706345464620" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="5216522185493495" type="System">
+                            <param id="0" name="Layout">Lvl3-7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4289946850978584">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="3003539931922006" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="9063112351360431" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-8&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5228737914629518" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="140391253731467" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="171184789133539" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="1771259857897929" type="System">
+                            <param id="0" name="Layout">Lvl3-8</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6294670352601209">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="3745961753413177" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="6845408247593487" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-9&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3868126224311266" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">28</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="740268124913935" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="720419391566841" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3442898746933153" type="System">
+                            <param id="0" name="Layout">Lvl3-9</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8528718032490607">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="613490259360153" type="Touch">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="757925654107904" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-10&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4968077890159295" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">29</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="291692033113694" type="Function">
+                            <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="126169151208675" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7464673869856442" type="System">
+                            <param id="0" name="Layout">Lvl3-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5311347464658645" title="Unlock">
+            <sub-events>
+                <event-block sid="2671154007385437">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5543413941442024" type="System" />
+                        <condition id="0" name="Compare text" sid="7371598186110252" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7303487921748939" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7057798876370166" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4122407680571047" type="lock" />
+                        <action id="4" name="Set font color" sid="8529241276607152" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5856965075596781">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9137875726622609" type="System" />
+                        <condition id="0" name="Compare text" sid="8396514767030044" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-2&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="892169726561938" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6420713761949425" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="106818662153344" type="lock" />
+                        <action id="4" name="Set font color" sid="2810155342725086" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8091383528344605">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5126176143221866" type="System" />
+                        <condition id="0" name="Compare text" sid="7413011089038806" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-3&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="9185845216097217" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7241701485060528" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7907028477956503" type="lock" />
+                        <action id="4" name="Set font color" sid="3394673887870427" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5609788119642015">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="522778725799821" type="System" />
+                        <condition id="0" name="Compare text" sid="3510041751871048" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-4&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="5270943982621674" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1020840081325746" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">03</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7842868181268903" type="lock" />
+                        <action id="4" name="Set font color" sid="9785531206038643" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6741650097888994">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="695151890625691" type="System" />
+                        <condition id="0" name="Compare text" sid="8605751519627721" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-5&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7825328038214763" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6557286359314414" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">04</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4198052937934928" type="lock" />
+                        <action id="4" name="Set font color" sid="6828805137170016" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1346661090975914">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1661286626656955" type="System" />
+                        <condition id="0" name="Compare text" sid="1043368926558744" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-6&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7693390869091572" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1638153571644418" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">05</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7429985242469132" type="lock" />
+                        <action id="4" name="Set font color" sid="3429364132313671" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4471613126885323">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5346938294777289" type="System" />
+                        <condition id="0" name="Compare text" sid="4673550640395314" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-7&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="2976397989457286" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7737944722097838" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">06</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1808653988406771" type="lock" />
+                        <action id="4" name="Set font color" sid="6728394858112636" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8233087572294535">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="7294347054084957" type="System" />
+                        <condition id="0" name="Compare text" sid="9330091400403669" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-8&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="6665642621703804" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3126688382858308" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">07</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9187782804598022" type="lock" />
+                        <action id="4" name="Set font color" sid="3638926224847648" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6211298393561655">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="4657621286118194" type="System" />
+                        <condition id="0" name="Compare text" sid="356544612076383" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-9&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="4329867544488894" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="9766584066632425" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">08</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1397727178375279" type="lock" />
+                        <action id="4" name="Set font color" sid="4096540511666211" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5697574844838181">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2155686499991253" type="System" />
+                        <condition id="0" name="Compare text" sid="1376847805618788" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-10&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="4861388382740871" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4983468058401675" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">09</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3301021096747266" type="lock" />
+                        <action id="4" name="Set font color" sid="8019829059132178" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7001219457379273">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="8267994225772228" type="System" />
+                        <condition id="0" name="Compare text" sid="5202066575543355" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="1593531172962633" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4386336116816127" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8391449045935278" type="lock" />
+                        <action id="4" name="Set font color" sid="9105122003273257" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6416546138018099">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="7996370972986008" type="System" />
+                        <condition id="0" name="Compare text" sid="1369105853073518" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-2&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="6019619754784906" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="2969585223056674" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7556028760687086" type="lock" />
+                        <action id="4" name="Set font color" sid="8969156456514945" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9409469230729508">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6315786508149529" type="System" />
+                        <condition id="0" name="Compare text" sid="8231098588259294" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-3&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="3053209700730492" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4816856054936706" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="789222485643541" type="lock" />
+                        <action id="4" name="Set font color" sid="608263633774674" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8784320067131704">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="4208090054314658" type="System" />
+                        <condition id="0" name="Compare text" sid="8364926832788864" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-4&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7042642455984075" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6241165466035756" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8272410147696226" type="lock" />
+                        <action id="4" name="Set font color" sid="9532063805764776" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1470628707101418">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3330860290054636" type="System" />
+                        <condition id="0" name="Compare text" sid="1138486624152577" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-5&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="14711538775701" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1754369766738664" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6635367282156553" type="lock" />
+                        <action id="4" name="Set font color" sid="2896415099204256" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6601839982313894">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="8083118464469657" type="System" />
+                        <condition id="0" name="Compare text" sid="4084041416290801" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-6&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="3430781307297901" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4940038754275251" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2235148425268239" type="lock" />
+                        <action id="4" name="Set font color" sid="7386209335614792" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8635164037902096">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="4866664578779485" type="System" />
+                        <condition id="0" name="Compare text" sid="265267862367357" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-7&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7854324555929845" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="8999077846144219" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5493353678830775" type="lock" />
+                        <action id="4" name="Set font color" sid="910657712032959" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7991183505035802">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5077063801568028" type="System" />
+                        <condition id="0" name="Compare text" sid="7122630439136395" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-8&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="6726822315200044" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="8862534820583272" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2617288627355589" type="lock" />
+                        <action id="4" name="Set font color" sid="4453612539967894" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7383605398102216">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2168542964454227" type="System" />
+                        <condition id="0" name="Compare text" sid="1604393226651543" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-9&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="8210458065396202" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1245120260678998" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8971724807578912" type="lock" />
+                        <action id="4" name="Set font color" sid="3403017210303159" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2717532577091918">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="7446512315570778" type="System" />
+                        <condition id="0" name="Compare text" sid="4908099160431981" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;2-10&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7473061775060303" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5843161041558742" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9802259275550623" type="lock" />
+                        <action id="4" name="Set font color" sid="2563156400840011" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2514668899501356">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3398011201853319" type="System" />
+                        <condition id="0" name="Compare text" sid="1602695107349978" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="8771471065256472" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="33011204508511" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3487853498302729" type="lock" />
+                        <action id="4" name="Set font color" sid="6898644546518275" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8782920582409208">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2746805300397474" type="System" />
+                        <condition id="0" name="Compare text" sid="4914546386902692" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-2&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7663496681885196" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="925963156252525" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7580218071741652" type="lock" />
+                        <action id="4" name="Set font color" sid="7294093404539475" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1433115867698979">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1394146481361964" type="System" />
+                        <condition id="0" name="Compare text" sid="6544120073998632" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-3&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7572986860139198" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="8513381633977119" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1707065867896663" type="lock" />
+                        <action id="4" name="Set font color" sid="4691163184334651" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6335551300823473">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2291428434604821" type="System" />
+                        <condition id="0" name="Compare text" sid="2138921698600296" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-4&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="9101756477660401" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4352881187765688" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7171821006376053" type="lock" />
+                        <action id="4" name="Set font color" sid="9222079696996779" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7492777750094435">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="8449164555710384" type="System" />
+                        <condition id="0" name="Compare text" sid="1167553002923444" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-5&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="3108147413486416" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5755072133689558" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9547872856809428" type="lock" />
+                        <action id="4" name="Set font color" sid="9959013184779631" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2722683509194344">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="7957377521714793" type="System" />
+                        <condition id="0" name="Compare text" sid="5156702137182556" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-6&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7892937173491448" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="200531121819108" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="210638889456616" type="lock" />
+                        <action id="4" name="Set font color" sid="218505331672312" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7893429455362669">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3066909698512819" type="System" />
+                        <condition id="0" name="Compare text" sid="6573581746956828" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-7&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="8911235096588582" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3372092155614886" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="73802840806765" type="lock" />
+                        <action id="4" name="Set font color" sid="4786750780411556" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3844129389155454">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="906083685385783" type="System" />
+                        <condition id="0" name="Compare text" sid="3748094891278375" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-8&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="9656407698189531" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="9112300163413199" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5750031601374434" type="lock" />
+                        <action id="4" name="Set font color" sid="5105246439189001" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4422642626419395">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6121569773194549" type="System" />
+                        <condition id="0" name="Compare text" sid="8011491696967906" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-9&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7585684958952101" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4833322791171155" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">28</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6928714838373637" type="lock" />
+                        <action id="4" name="Set font color" sid="2385866367130284" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7384753504891644">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9797846375952057" type="System" />
+                        <condition id="0" name="Compare text" sid="6212082636432446" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;3-10&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="9863609456201586" type="lock">
+                            <param id="0" name="Object">lvlText</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5871757632990935" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">29</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2170250540792876" type="lock" />
+                        <action id="4" name="Set font color" sid="5595660514237215" type="lvlText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="9890697283686148" title="Gamepad">
+            <sub-events>
+                <event-block sid="5754312258708338">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="5347333892006397" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6823368924689474" type="System">
+                            <param id="0" name="Layout">LevelSelect1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3610923910238133">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="7976849612805805" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="9239046398619668" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2988879023042136" type="System">
+                            <param id="0" name="Layout">Lvl1-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="559762793340313">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3918656116522845" type="System" />
+                        <condition id="4" name="Has gamepads" sid="5430033124866454" type="Gamepad" />
+                        <condition id="0" name="Compare text" sid="8645138507265497" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="9052092823920102" type="marker">
+                            <param id="0" name="X">lvlText.X</param>
+                            <param id="1" name="Y">lvlText.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2540279578585732">
+                    <conditions>
+                        <condition id="1" name="On gamepad connected" sid="6793675538239215" type="Gamepad" />
+                        <condition id="0" name="Compare text" sid="9726871975956489" type="lvlText">
+                            <param id="0" name="Text to compare">&quot;1-1&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="4260006171683738" type="marker">
+                            <param id="0" name="X">lvlText.X</param>
+                            <param id="1" name="Y">lvlText.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4133494117410196">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="6270286309890707" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="1083635070412741" type="marker">
+                            <param id="0" name="Angle">marker.Angle + 120*dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9312115240803503">
+                    <conditions />
+                    <actions>
+                        <action id="-3" name="Set position" sid="4987902572287739" type="marker">
+                            <param id="0" name="X">lvlText.X</param>
+                            <param id="1" name="Y">lvlText.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9157907140458096">
+                    <conditions />
+                    <actions>
+                        <action id="-3" name="Set position" sid="1713887484649826" type="marker">
+                            <param id="0" name="X">lvlText.X</param>
+                            <param id="1" name="Y">lvlText.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1471012023625218">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="5900429438190847" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">70</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="5114749159058572">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="3264526685463905" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">-70</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

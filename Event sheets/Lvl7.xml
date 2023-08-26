@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Lvl7</name>
+    <events>
+        <include>PlatformE</include>
+        <event-block sid="305124806703558">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1785542948623329" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="5322759475510605" type="Camera">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2185708096147632">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5866921485249746" type="player">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5758941028545093" type="System">
+                    <param id="0" name="Layout">Lvl1-8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2227710752527395">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="639658184637157" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3119649161739944" type="levelNum">
+                    <param id="0" name="Frame number">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="4158371591671504" type="System">
+                    <param id="0" name="Variable">DoubleJump</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="5899125237127212" type="System">
+                    <param id="0" name="Variable">Runner</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="492386685424211">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8175693383528202" type="System" />
+                <condition id="-14" name="Compare variable" sid="8651456306211999" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2939578359983579" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="0" name="Call function" sid="12939248090275" type="Function">
+                    <param id="0" name="Name">&quot;save&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7250171863555948">
+            <conditions>
+                <condition id="-14" inverted="1" name="Compare variable" sid="8862740106893095" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="2809249832999296" type="Audio" />
+                <action id="-9" name="Set value" sid="2285449396097125" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

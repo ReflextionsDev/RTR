@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Lvl1</name>
+    <events>
+        <include>PlatformE</include>
+        <event-block sid="2043">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2044" type="player">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2049" type="System">
+                    <param id="0" name="Layout">Lvl1-2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2103">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2104" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="2105" type="Camera">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="168473862552375">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="701519325313488" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7802142487786613" type="levelNum">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="4283117880360396" type="System">
+                    <param id="0" name="Variable">DoubleJump</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2741956846747482" type="System">
+                    <param id="0" name="Variable">Runner</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6055322382990194">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="127161576704633" type="System" />
+                <condition id="-14" name="Compare variable" sid="9581591024346441" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="560500298919116" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="262698405107045" type="Function">
+                    <param id="0" name="Name">&quot;save&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5283654872638032">
+            <conditions>
+                <condition id="-14" inverted="1" name="Compare variable" sid="2518671165821753" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="8444970857633333" type="Audio" />
+                <action id="-9" name="Set value" sid="5758720265674403" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="653737535575221">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="824575258544337" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="318600109800415">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="706413879068246" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="556659822866802">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="881054510387570" type="HelpTXT">
+                                    <param id="0" name="Unique ID">1315</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="674731900941369" type="HelpTXT">
+                                    <param id="0" name="Text">&quot;Use the arrow buttons to move.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="849638407977649">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="585041163547409" type="HelpTXT">
+                                    <param id="0" name="Unique ID">1325</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="974207076781870" type="HelpTXT">
+                                    <param id="0" name="Text">&quot;Tap the circle to jump.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="546225878952687">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="691541752112384" type="HelpTXT">
+                                    <param id="0" name="Unique ID">1329</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="676953280565549" type="HelpTXT">
+                                    <param id="0" name="Text">&quot;The longer the circle is held, the higher you jump!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

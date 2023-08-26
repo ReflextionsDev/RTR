@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MenuEvent</name>
+    <events>
+        <include>FadeE</include>
+        <variable constant="0" name="Loaded" sid="1414934588461176" static="0" type="number">0</variable>
+        <variable constant="0" name="MenuMusic" sid="5980204685430471" static="0" type="number">0</variable>
+        <event-block sid="192">
+            <conditions>
+                <condition id="3" name="On touched object" sid="193" type="Touch">
+                    <param id="0" name="Object">menuBtn1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="732464723395627" type="Function">
+                    <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="826991046906911" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1288" type="System">
+                    <param id="0" name="Layout">LevelSelect1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="938945741695823">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6448739503688654" type="Touch">
+                    <param id="0" name="Object">menuBtn2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="841621775824947" type="Function">
+                    <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="252488842687771" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="8954978592017286" type="System">
+                    <param id="0" name="Layout">Options</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2836173149564346">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9415114102904062" type="Touch">
+                    <param id="0" name="Object">menuBtn5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="874685584998744" type="Function">
+                    <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="969637865812821" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="4482136635022512" type="System">
+                    <param id="0" name="Layout">More</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9085653543045049">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5049627751148837" type="Touch">
+                    <param id="0" name="Object">menuBtn4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="7630543596879247" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="6371085630597471">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6166035475672873" type="Touch">
+                    <param id="0" name="Object">menuBtn8</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-group description="" sid="9602212046473072" title="Load/Save">
+            <sub-events>
+                <event-block sid="3132947516527748">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6397681186667486" type="System" />
+                        <condition id="-14" name="Compare variable" sid="2216151594603773" type="System">
+                            <param id="0" name="Variable">Loaded</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7393782698131766" type="System">
+                            <param id="0" name="Variable">Loaded</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="1610572082718809" type="Function">
+                            <param id="0" name="Name">&quot;load&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8678652729439531">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1658641004685714" type="Function">
+                            <param id="0" name="Name">&quot;Load&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-9" name="Set value" sid="4070823635846906" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Value">30</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7898646179910823" type="System">
+                            <param id="0" name="Variable">LevelsUnlocked</param>
+                            <param id="1" name="Value">int(WebStorage.LocalValue(&quot;lvlunlock&quot;))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="167151263999030">
+                            <conditions>
+                                <condition id="3" name="Local key exists" sid="102128219707901" type="WebStorage">
+                                    <param id="0" name="Key">&quot;MusicLvl&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="536336127844825" type="System">
+                                    <param id="0" name="Variable">MusicLvl</param>
+                                    <param id="1" name="Value">int(WebStorage.LocalValue(&quot;MusicLvl&quot;))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="961085238409814">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="617572933612622" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="117673568683186" type="System">
+                                    <param id="0" name="Variable">MusicLvl</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="164734009958433">
+                            <conditions>
+                                <condition id="3" name="Local key exists" sid="728080314631556" type="WebStorage">
+                                    <param id="0" name="Key">&quot;SoundLvl&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="550678772271399" type="System">
+                                    <param id="0" name="Variable">SoundLvl</param>
+                                    <param id="1" name="Value">int(WebStorage.LocalValue(&quot;SoundLvl&quot;))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="676497859741021">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="132129513971435" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="922234726868529" type="System">
+                                    <param id="0" name="Variable">SoundLvl</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="720145549389235">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="941249645062202" type="System">
+                                    <param id="0" name="Variable">MusicVolume</param>
+                                    <param id="1" name="Value">(MusicLvl*2)-20</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="166808815710576" type="System">
+                                    <param id="0" name="Variable">SoundVolume</param>
+                                    <param id="1" name="Value">(SoundLvl*2)-20</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="899765231895537">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="497672720421942" type="System">
+                                            <param id="0" name="Variable">MusicLvl</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="447047109335485" type="System">
+                                            <param id="0" name="Variable">MusicVolume</param>
+                                            <param id="1" name="Value">-100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="101530094883222">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="415856981786866" type="System">
+                                            <param id="0" name="Variable">SoundLvl</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="664852312009247" type="System">
+                                            <param id="0" name="Variable">SoundVolume</param>
+                                            <param id="1" name="Value">(SoundLvl*2)-20</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5697672971818275" title="Clouds">
+            <sub-events>
+                <event-block sid="1169">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="1170" type="System">
+                            <param id="0" name="Interval (seconds)">random(4,8)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="1171" type="System">
+                            <param id="0" name="Object to create">cloud</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(900,1200)</param>
+                            <param id="3" name="Y">random(50,500)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1172">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1173" type="System" />
+                        <condition id="-11" name="For Each" sid="1174" type="System">
+                            <param id="0" name="Object">cloud</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1175" type="cloud">
+                            <param id="0" name="Frame number">random(0,4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1176">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="1177" type="cloud" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1178" type="cloud">
+                            <param id="0" name="Frame number">random(0,4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1612">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1613" type="cloud">
+                            <param id="0" name="Object">outside</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1614" type="cloud" />
+                    </actions>
+                </event-block>
+                <event-block sid="1950">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1951" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1952" type="cloud">
+                            <param id="0" name="X">cloud.X - 90*dt</param>
+                            <param id="1" name="Y">cloud.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="4229883350180616">
+            <conditions>
+                <condition id="4" inverted="1" name="Is any playing" sid="5754619130453305" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9592729945638761" type="Audio">
+                    <param id="0" name="Audio file">Kubbi - Sleet - 07 Planet III (Mesosphere)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">MusicVolume</param>
+                    <param id="1" name="Tag (optional)">&quot;BGM&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7006040989053695">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2653141108324978" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1935120577939638" type="menuBG">
+                    <param id="0" name="Animation">&quot;alt&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action disabled="1" id="4" name="Set font color" sid="6279240814719559" type="menuBtn1">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+                <action disabled="1" id="4" name="Set font color" sid="5143306526945829" type="menuBtn2">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+                <action disabled="1" id="4" name="Set font color" sid="5062822660004274" type="menuBtn7">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+                <action disabled="1" id="4" name="Set font color" sid="2858982057772368" type="menuBtn5">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+                <action disabled="1" id="4" name="Set font color" sid="559915948125791" type="menuBtn4">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+                <action disabled="1" id="4" name="Set font color" sid="581026153022581" type="menuBtn8">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6721457771847461">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1528722291511999" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="886245317413439" type="Function">
+                    <param id="0" name="Name">&quot;FadeIn2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="5" name="Set web font" sid="9366481881646821" type="menuBtn1">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="805815504828843" type="menuBtn2">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="1890473194983886" type="menuBtn4">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="9875678846842745" type="menuBtn5">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="7503084254457594" type="menuBtn7">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="4030436909492414" type="menuBtn8">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="848406477292485">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="976746684260796" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="378161873798689" type="menuBtn4" />
+                        <action id="-3" name="Set position" sid="983013985929749" type="menuBtn1">
+                            <param id="0" name="X">Self.X</param>
+                            <param id="1" name="Y">Self.Y + 30</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="581629438320712" type="menuBtn2">
+                            <param id="0" name="X">Self.X</param>
+                            <param id="1" name="Y">Self.Y + 60</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="753522434952050" type="menuBtn5">
+                            <param id="0" name="X">Self.X </param>
+                            <param id="1" name="Y">Self.Y + 90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LVl3-10</name>
+    <events>
+        <include>PlatformE</include>
+        <event-block sid="271502619087091">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3880078338442403" type="System" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="248599648259562" type="player">
+                    <param id="0" name="Instance variable">dead</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="6722222160470814" type="Camera">
+                    <param id="0" name="X">player.X + 300</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5860292429011613">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1982408817692866" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2445200622508468" type="System">
+                    <param id="0" name="Variable">Runner</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6291058871296557" type="System">
+                    <param id="0" name="Variable">DoubleJump</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="168468262286676" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="1385730246933191" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="5629103238626673" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="4823285744872571" type="System">
+                    <param id="0" name="Layer">6</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="479811374113588" type="System">
+                    <param id="0" name="Layer">&quot;zipline&quot;</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="5" name="Set frame" sid="1066974840249528" type="levelNum">
+                    <param id="0" name="Frame number">29</param>
+                </action>
+                <action id="-9" name="Destroy" sid="823993408536578" type="buttonLeft" />
+                <action id="-9" name="Destroy" sid="957061853536800" type="nullLeft" />
+                <action id="-9" name="Destroy" sid="581654293834849" type="buttonRight" />
+                <action id="-9" name="Destroy" sid="701317301112977" type="nullRight" />
+            </actions>
+        </event-block>
+        <event-block sid="2123837340239493">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="827420202695773" type="player">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="35889544004058">
+                    <conditions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2975886037879091" type="System">
+                            <param id="0" name="Layout">More</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8585466284405489">
+                    <conditions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="7737653802033294" type="System">
+                            <param id="0" name="Layout">More</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5973669679049008">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5270632574277026" type="System" />
+                <condition id="-14" name="Compare variable" sid="246268675858843" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9604145178901642" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Value">29</param>
+                </action>
+                <action id="0" name="Call function" sid="5202338313771209" type="Function">
+                    <param id="0" name="Name">&quot;save&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="78381121277802">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="194686839414479" type="player">
+                    <param id="0" name="Object">spikerange</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="5223385794556486" type="player">
+                    <param id="0" name="Speed">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6542853386583302">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="332154519784066" type="player">
+                    <param id="0" name="Instance variable">dead</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="426599087927144" type="System">
+                    <param id="0" name="Variable">Runner</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="4462114217794847" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="2075228125985932" type="player">
+                    <param id="0" name="Speed">500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3145021946223281">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5181926540955212" type="player">
+                    <param id="0" name="Object">vc1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Set layer scale" sid="7356759910438044" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Scale">0.5</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="9860625504564048" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Scale">0.5</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="3004339947586906" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Scale">0.5</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="2516852953461625" type="System">
+                    <param id="0" name="Layer">6</param>
+                    <param id="1" name="Scale">0.5</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="850438078758959" type="System">
+                    <param id="0" name="Layer">&quot;zipline&quot;</param>
+                    <param id="1" name="Scale">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9468311195273546">
+            <conditions>
+                <condition id="-14" inverted="1" name="Compare variable" sid="7834107580290672" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="6313423429871099" type="Audio" />
+                <action id="-9" name="Set value" sid="3533901762801757" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Value">12</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

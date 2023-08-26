@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LoadingE</name>
+    <events>
+        <event-block sid="1408164341871929">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="903667672533873" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="675023190888431" type="loadingSprite">
+                    <param id="0" name="X">Loading.X</param>
+                    <param id="1" name="Y">Loading.Y</param>
+                </action>
+                <action id="4" name="Preload" sid="3933994983835761" type="Audio">
+                    <param id="0" name="Audio file">Kubbi - Sleet - 07 Planet III (Mesosphere)</param>
+                </action>
+                <action disabled="1" id="4" name="Clear local storage" sid="635123232325262" type="WebStorage" />
+            </actions>
+        </event-block>
+        <event-block sid="622863172624318">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="614805854000135" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="484299573364844">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="209747062724559" type="System">
+                            <param id="0" name="First value">loadingprogress</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="934576148515832" type="Loading">
+                            <param id="0" name="Width">loadingprogress*650</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="848652333677850" type="loadingSprite">
+                            <param id="0" name="X">lerp(Self.X,Loading.X + Loading.Width + 10,0.03) - 5</param>
+                            <param id="1" name="Y">Loading.Y - 30</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="545754183648924">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="760785967936951" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="252381481229125" type="Loading">
+                            <param id="0" name="Width">loadingprogress*650</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="531267283861800" type="loadingSprite">
+                            <param id="0" name="X">lerp(Self.X,Loading.X + Loading.Width + 10,0.03) + 10</param>
+                            <param id="1" name="Y">Loading.Y - 30</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="833315276621550">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="815453190116229" type="loadingSprite">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">Loading.X + Loading.Width + 20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1314508527937381" type="System">
+                    <param id="0" name="Layout">FontLoader</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

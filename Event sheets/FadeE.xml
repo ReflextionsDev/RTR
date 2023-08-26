@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FadeE</name>
+    <events>
+        <event-block sid="633364554270681">
+            <conditions>
+                <condition id="0" name="On function" sid="588308371392604" type="Function">
+                    <param id="0" name="Name">&quot;FadeIn&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="686153669057538" type="System">
+                    <param id="0" name="Object to create">FadeIn</param>
+                    <param id="1" name="Layer">9</param>
+                    <param id="2" name="X">-1000</param>
+                    <param id="3" name="Y">-1000</param>
+                </action>
+                <action id="-7" name="Set size" sid="914795900451007" type="FadeIn">
+                    <param id="0" name="Width">20000</param>
+                    <param id="1" name="Height">20000</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="962849375801427">
+            <conditions>
+                <condition id="0" name="On function" sid="914694306033423" type="Function">
+                    <param id="0" name="Name">&quot;FadeIn2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="101378040198975" type="System">
+                    <param id="0" name="Object to create">FadeIn</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">-1000</param>
+                    <param id="3" name="Y">-1000</param>
+                </action>
+                <action id="-7" name="Set size" sid="398040643450774" type="FadeIn">
+                    <param id="0" name="Width">20000</param>
+                    <param id="1" name="Height">20000</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="414145886413593">
+            <conditions>
+                <condition id="0" name="On function" sid="605882014061893" type="Function">
+                    <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="691075356269421" type="System">
+                    <param id="0" name="Object to create">FadeOut</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">-1000</param>
+                    <param id="3" name="Y">-1000</param>
+                </action>
+                <action id="-7" name="Set size" sid="185174490816093" type="FadeOut">
+                    <param id="0" name="Width">20000</param>
+                    <param id="1" name="Height">20000</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

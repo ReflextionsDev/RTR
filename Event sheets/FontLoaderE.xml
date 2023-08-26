@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FontLoaderE</name>
+    <events>
+        <event-block sid="945426580575114">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="547678431467965" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="547465838358781" type="menuBtn1">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="220090118504488" type="menuBtn2">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="914234891175193" type="menuBtn5">
+                    <param id="0" name="Family name">&quot;mathletebulky&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="384038236583261" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="609354164853424" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

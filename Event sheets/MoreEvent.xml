@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MoreEvent</name>
+    <events>
+        <include>FadeE</include>
+        <event-group description="" sid="7219576077458594" title="Clouds">
+            <sub-events>
+                <event-block sid="1169">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="1170" type="System">
+                            <param id="0" name="Interval (seconds)">random(4,8)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="1171" type="System">
+                            <param id="0" name="Object to create">cloud</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(900,1200)</param>
+                            <param id="3" name="Y">random(50,500)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1172">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1173" type="System" />
+                        <condition id="-11" name="For Each" sid="1174" type="System">
+                            <param id="0" name="Object">cloud</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1175" type="cloud">
+                            <param id="0" name="Frame number">random(0,4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1176">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="1177" type="cloud" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1178" type="cloud">
+                            <param id="0" name="Frame number">random(0,4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1612">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1613" type="cloud">
+                            <param id="0" name="Object">outside</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1614" type="cloud" />
+                    </actions>
+                </event-block>
+                <event-block sid="1950">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1951" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1952" type="cloud">
+                            <param id="0" name="X">cloud.X - 90*dt</param>
+                            <param id="1" name="Y">cloud.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="972908793953686">
+            <conditions>
+                <condition id="3" name="On touched object" sid="155543429812375" type="Touch">
+                    <param id="0" name="Object">backbtn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="646068455681215" type="Function">
+                    <param id="0" name="Name">&quot;FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="957265818871736" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="181550268959934" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7082684129760568">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3999426683391233" type="Touch">
+                    <param id="0" name="Object">reflexTwitter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="7956439633453437" type="Browser">
+                    <param id="0" name="URL">&quot;https://twitter.com/ReflextionsOfic&quot;</param>
+                    <param id="1" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7570377636419959">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2702737945755931" type="Touch">
+                    <param id="0" name="Object">ntTwitter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="869265546595112" type="Browser">
+                    <param id="0" name="URL">&quot;https://twitter.com/SymphonicStorms&quot;</param>
+                    <param id="1" name="Tag">&quot;2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3099605321833169">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9422924665772335" type="Touch">
+                    <param id="0" name="Object">kubbiTwitter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="6175957122961116" type="Browser">
+                    <param id="0" name="URL">&quot;https://twitter.com/_kubbi&quot;</param>
+                    <param id="1" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2627832395695325">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5028297613648071" type="Touch">
+                    <param id="0" name="Object">ReflextionsWeb</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="4308683806492236" type="Browser">
+                    <param id="0" name="URL">&quot;http://reflextionsdev.com&quot;</param>
+                    <param id="1" name="Tag">&quot;Reflextions&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7466474417722754">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="3256203387701267" type="Mouse">
+                    <param id="0" name="Object">kubbiTwitter</param>
+                </condition>
+                <condition id="7" name="Cursor is over object" sid="478407420790437" type="Mouse">
+                    <param id="0" name="Object">ReflextionsWeb</param>
+                </condition>
+                <condition id="7" name="Cursor is over object" sid="8199810924826091" type="Mouse">
+                    <param id="0" name="Object">reflexTwitter</param>
+                </condition>
+                <condition id="7" name="Cursor is over object" sid="4761289862377741" type="Mouse">
+                    <param id="0" name="Object">ntTwitter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="5270543988404966" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1046672458044656">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8961148656844527" type="Mouse">
+                    <param id="0" name="Object">kubbiTwitter</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="1004778641842966" type="Mouse">
+                    <param id="0" name="Object">ReflextionsWeb</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="1356076464713327" type="Mouse">
+                    <param id="0" name="Object">reflexTwitter</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8112385259370659" type="Mouse">
+                    <param id="0" name="Object">ntTwitter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="6623789219802849" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="988753103240089">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="408901643660790" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="131490961295189" type="Function">
+                    <param id="0" name="Name">&quot;FadeIn2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <include>FadeE</include>
+    </events>
+</c2eventsheet>

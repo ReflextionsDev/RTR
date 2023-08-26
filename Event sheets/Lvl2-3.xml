@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Lvl2-3</name>
+    <events>
+        <include>PlatformE</include>
+        <event-block sid="8050604470512374">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2963485999745447" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="924534391562156" type="Camera">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3852767134749708">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4873353289692261" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1561399056383894" type="System">
+                    <param id="0" name="Variable">DoubleJump</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="2859211938164462" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="9589965026162158" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="8390339295822377" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="6534880489838397" type="System">
+                    <param id="0" name="Layer">6</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="380944806169124" type="System">
+                    <param id="0" name="Layer">&quot;zipline&quot;</param>
+                    <param id="1" name="Scale">0.75</param>
+                </action>
+                <action id="-9" name="Set value" sid="8815362281658559" type="System">
+                    <param id="0" name="Variable">Runner</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2389641718465864">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4565746077012255" type="player">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3578782631300482" type="System">
+                    <param id="0" name="Layout">Lvl2-4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9680804133506342">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="944329033775687" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="777427030575712" type="levelNum">
+                    <param id="0" name="Frame number">12</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6680037845978137">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1660709114401244" type="System" />
+                <condition id="-14" name="Compare variable" sid="4781575367217527" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5228752651443486" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Value">12</param>
+                </action>
+                <action id="0" name="Call function" sid="575433774927508" type="Function">
+                    <param id="0" name="Name">&quot;save&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4919952509629982">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2563640108357938" type="player">
+                    <param id="0" name="Object">vc1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Set layer scale" sid="8720553589424392" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Scale">0.50</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="660083446738137" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Scale">0.50</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="8489920286248863" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Scale">0.50</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="4292138402305517" type="System">
+                    <param id="0" name="Layer">6</param>
+                    <param id="1" name="Scale">0.50</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="400333520609522" type="System">
+                    <param id="0" name="Layer">&quot;zipline&quot;</param>
+                    <param id="1" name="Scale">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="46640851518955">
+            <conditions>
+                <condition id="-14" inverted="1" name="Compare variable" sid="6060886231366521" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="783162251554943" type="Audio" />
+                <action id="-9" name="Set value" sid="3700209108455276" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

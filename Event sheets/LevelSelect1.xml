@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelSelect1</name>
+    <events>
+        <include>LevelSelect</include>
+        <event-block any="1" sid="937066215416704">
+            <conditions>
+                <condition id="3" name="On touched object" sid="234094833565173" type="Touch">
+                    <param id="0" name="Object">buttonRight</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="763780031988040" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="200673309571730" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="303701134681707" type="System">
+                    <param id="0" name="Layout">LevelSelect2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

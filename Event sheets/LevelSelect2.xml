@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelSelect2</name>
+    <events>
+        <include>LevelSelect</include>
+        <event-block any="1" sid="875145329835702">
+            <conditions>
+                <condition id="3" name="On touched object" sid="348230545404293" type="Touch">
+                    <param id="0" name="Object">buttonLeft</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="991917306962507" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="177665886389735" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="802656231524975" type="System">
+                    <param id="0" name="Layout">LevelSelect1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="831494375255744">
+            <conditions>
+                <condition id="3" name="On touched object" sid="460200254775565" type="Touch">
+                    <param id="0" name="Object">buttonRight</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="784804357317074" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="341571941926336" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="890190450213682" type="System">
+                    <param id="0" name="Layout">LevelSelect3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

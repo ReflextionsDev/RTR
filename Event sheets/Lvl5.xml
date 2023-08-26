@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Lvl5</name>
+    <events>
+        <include>PlatformE</include>
+        <event-block sid="975144763374431">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="759363079586566" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="445686984454577" type="Camera">
+                    <param id="0" name="Y">outside.Y</param>
+                </action>
+                <action id="-15" name="Set visible" sid="734831502053495" type="outside">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="461092609176195">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="171483661194047" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="749796414651163" type="outside">
+                    <param id="0" name="Y">outside.Y - 160*dt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="379514242895166">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="337207800154579" type="System" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="810749956095389" type="player">
+                    <param id="0" name="Instance variable">dead</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="185740449954333" type="Camera">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="784588041142688">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="290702899440108" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="841029819751293" type="System">
+                    <param id="0" name="Variable">DoubleJump</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="144270396725038" type="System">
+                    <param id="0" name="Variable">Runner</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2043">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2044" type="player">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4216174596884094">
+                    <conditions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2049" type="System">
+                            <param id="0" name="Layout">Lvl1-6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3146519042509493">
+                    <conditions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="8093782526565292" type="System">
+                            <param id="0" name="Layout">Lvl1-6</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7922864123265439">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="361287749152963" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="863608472475999" type="levelNum">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="2521957752199981" type="System">
+                    <param id="0" name="Variable">DoubleJump</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9463556062591092" type="System">
+                    <param id="0" name="Variable">Runner</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9633990437241114">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="47021175247989" type="System" />
+                <condition id="-14" name="Compare variable" sid="3386301547037325" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3544260689039866" type="System">
+                    <param id="0" name="Variable">LevelsUnlocked</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="0" name="Call function" sid="2456838324928981" type="Function">
+                    <param id="0" name="Name">&quot;save&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6214807783246121">
+            <conditions>
+                <condition id="-14" inverted="1" name="Compare variable" sid="9289309676425679" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="6727322479350293" type="Audio" />
+                <action id="-9" name="Set value" sid="3416559559162844" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
