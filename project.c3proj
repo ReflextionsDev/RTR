@@ -520,7 +520,8 @@
 			"MoreEvent",
 			"LoadingE",
 			"FadeE",
-			"FontLoaderE"
+			"FontLoaderE",
+			"ToDoE"
 		],
 		"subfolders": [
 			{

@@ -1,0 +1,22 @@
+{
+	"name": "ToDoE",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "Add social buttons to menu"
+		},
+		{
+			"eventType": "comment",
+			"text": "Add achievements button to menu"
+		},
+		{
+			"eventType": "comment",
+			"text": "Integrate achievements"
+		},
+		{
+			"eventType": "comment",
+			"text": "Update credits"
+		}
+	],
+	"sid": 516555539465536
+}
