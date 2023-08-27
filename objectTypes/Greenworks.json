@@ -1,0 +1,10 @@
+{
+	"name": "Greenworks",
+	"plugin-id": "Greenworks",
+	"sid": 294950478605093,
+	"singleglobal-inst": {
+		"type": "Greenworks",
+		"properties": {},
+		"uid": 112
+	}
+}
