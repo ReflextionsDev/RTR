@@ -171,7 +171,7 @@
 					"properties": {
 						"text": "Hold the jump button to jump on orange surfaces. Release it to stop jumping.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,

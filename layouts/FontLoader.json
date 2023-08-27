@@ -11,7 +11,7 @@
 					"properties": {
 						"text": "Credits",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 72,
 						"line-height": 0,
 						"bold": false,
@@ -65,7 +65,7 @@
 					"properties": {
 						"text": "Play",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 72,
 						"line-height": 0,
 						"bold": false,
@@ -119,7 +119,7 @@
 					"properties": {
 						"text": "Options",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 72,
 						"line-height": 0,
 						"bold": false,

@@ -140,7 +140,7 @@
 					"properties": {
 						"text": "Press T or Enter to go into wingsuit mode. Your velocity will carry.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -183,7 +183,7 @@
 					"properties": {
 						"text": "Use the arrow keys to steer the wingsuit.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,

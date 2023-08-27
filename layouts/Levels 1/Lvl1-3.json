@@ -171,7 +171,7 @@
 					"properties": {
 						"text": "Wind from fans will push you.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -214,7 +214,7 @@
 					"properties": {
 						"text": "Spikes will kill you.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,

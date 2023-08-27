@@ -171,7 +171,7 @@
 					"properties": {
 						"text": "You can now double jump! Press the jump button again at the end of your jump to double jump!",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,

@@ -2787,7 +2787,7 @@
 					"properties": {
 						"text": "You can only jump on this level!",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -4095,7 +4095,7 @@
 					"properties": {
 						"text": "Good luck!",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,

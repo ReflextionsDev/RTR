@@ -1,0 +1,26 @@
+{
+	"name": "Mathlete",
+	"plugin-id": "Text",
+	"sid": 284892199355628,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"menuBtn1",
+		"menuBtn2",
+		"menuBtn3",
+		"menuBtn5",
+		"menuBtn6",
+		"menuBtn4",
+		"menuBtn8",
+		"menuBtn7",
+		"generalTxt",
+		"HelpTXT",
+		"tutTXT",
+		"Fullscreen",
+		"musicLvl",
+		"lvlText",
+		"loadingText",
+		"soundLvl"
+	]
+}

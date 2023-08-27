@@ -171,7 +171,7 @@
 					"properties": {
 						"text": "Spikes will kill you.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -214,7 +214,7 @@
 					"properties": {
 						"text": "Use velocity from the fan to go higher.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,

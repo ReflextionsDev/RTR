@@ -171,7 +171,7 @@
 					"properties": {
 						"text": "Watch out for lava!",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,

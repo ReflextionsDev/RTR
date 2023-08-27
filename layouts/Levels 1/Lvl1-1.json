@@ -236,7 +236,7 @@
 					"properties": {
 						"text": "Press the arrow keys to move.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -279,7 +279,7 @@
 					"properties": {
 						"text": "Press the Spacebar to jump.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -322,7 +322,7 @@
 					"properties": {
 						"text": "The longer the spacebar is held, the higher you jump.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -365,7 +365,7 @@
 					"properties": {
 						"text": "Green flags are checkpoints.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -408,7 +408,7 @@
 					"properties": {
 						"text": "Green doors take you to the next level",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -2370,7 +2370,7 @@
 					"properties": {
 						"text": "Paused",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "mathlete-bulky-webfont",
 						"size": 140.25,
 						"line-height": 0,
 						"bold": true,

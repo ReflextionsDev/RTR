@@ -429,7 +429,8 @@
 	"families": {
 		"items": [
 			"HUD_objects",
-			"HUD_text"
+			"HUD_text",
+			"Mathlete"
 		],
 		"subfolders": []
 	},

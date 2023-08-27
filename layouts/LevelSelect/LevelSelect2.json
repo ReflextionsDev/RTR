@@ -810,7 +810,7 @@
 					"properties": {
 						"text": "2-1",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -853,7 +853,7 @@
 					"properties": {
 						"text": "2-2",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -896,7 +896,7 @@
 					"properties": {
 						"text": "2-3",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -939,7 +939,7 @@
 					"properties": {
 						"text": "2-4",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -982,7 +982,7 @@
 					"properties": {
 						"text": "2-5",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1025,7 +1025,7 @@
 					"properties": {
 						"text": "2-6",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1068,7 +1068,7 @@
 					"properties": {
 						"text": "2-7",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1111,7 +1111,7 @@
 					"properties": {
 						"text": "2-8",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1154,7 +1154,7 @@
 					"properties": {
 						"text": "2-9",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1197,7 +1197,7 @@
 					"properties": {
 						"text": "2-10",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1530,7 +1530,7 @@
 					"properties": {
 						"text": "3-1",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1573,7 +1573,7 @@
 					"properties": {
 						"text": "3-2",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1616,7 +1616,7 @@
 					"properties": {
 						"text": "3-3",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1659,7 +1659,7 @@
 					"properties": {
 						"text": "3-4",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1702,7 +1702,7 @@
 					"properties": {
 						"text": "3-5",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1745,7 +1745,7 @@
 					"properties": {
 						"text": "3-6",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1788,7 +1788,7 @@
 					"properties": {
 						"text": "3-7",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1831,7 +1831,7 @@
 					"properties": {
 						"text": "3-8",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1874,7 +1874,7 @@
 					"properties": {
 						"text": "3-9",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1917,7 +1917,7 @@
 					"properties": {
 						"text": "3-10",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -1960,7 +1960,7 @@
 					"properties": {
 						"text": "1-1",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2003,7 +2003,7 @@
 					"properties": {
 						"text": "1-2",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2046,7 +2046,7 @@
 					"properties": {
 						"text": "1-3",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2089,7 +2089,7 @@
 					"properties": {
 						"text": "1-4",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2132,7 +2132,7 @@
 					"properties": {
 						"text": "1-5",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2175,7 +2175,7 @@
 					"properties": {
 						"text": "1-6",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2218,7 +2218,7 @@
 					"properties": {
 						"text": "1-7",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2261,7 +2261,7 @@
 					"properties": {
 						"text": "Levels",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "mathlete-bulky-webfont",
 						"size": 56.25,
 						"line-height": 0,
 						"bold": true,
@@ -2354,7 +2354,7 @@
 					"properties": {
 						"text": "1-8",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2397,7 +2397,7 @@
 					"properties": {
 						"text": "1-9",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,
@@ -2440,7 +2440,7 @@
 					"properties": {
 						"text": "1-10",
 						"enable-bbcode": false,
-						"font": "Arial Narrow",
+						"font": "mathlete-bulky-webfont",
 						"size": 21.75,
 						"line-height": 0,
 						"bold": false,

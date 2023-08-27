@@ -258,7 +258,7 @@
 					"properties": {
 						"text": "Levels are automatically unlocked once you complete them.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -301,7 +301,7 @@
 					"properties": {
 						"text": "Jump on ziplines to ride them.",
 						"enable-bbcode": false,
-						"font": "Times New Roman",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,

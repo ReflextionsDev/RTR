@@ -161,7 +161,7 @@
 					"properties": {
 						"text": "Options",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -254,7 +254,7 @@
 					"properties": {
 						"text": "Music",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -308,7 +308,7 @@
 					"properties": {
 						"text": "Sound",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -478,7 +478,7 @@
 					"properties": {
 						"text": "0",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -521,7 +521,7 @@
 					"properties": {
 						"text": "0",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
@@ -593,7 +593,7 @@
 					"properties": {
 						"text": "Fullscreen",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
 						"bold": true,
