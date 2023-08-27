@@ -267,9 +267,9 @@
 						{
 							"id": "check-item-exists",
 							"objectClass": "LocalStorage",
-							"sid": 402778938052657,
+							"sid": 458152194564771,
 							"parameters": {
-								"key": "\"Musiclvl\""
+								"key": "\"MusicLvl\""
 							}
 						},
 						{

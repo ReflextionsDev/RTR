@@ -1994,11 +1994,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 6420713761949425,
+							"sid": 818214415545629,
 							"parameters": {
 								"variable": "LevelsUnlocked",
 								"comparison": 5,
-								"value": "2"
+								"value": "1"
 							}
 						}
 					],
