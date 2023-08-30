@@ -1,0 +1,15 @@
+{
+	"name": "MenuButtons",
+	"plugin-id": "Text",
+	"sid": 651384189994964,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"menuBtn1",
+		"menuBtn2",
+		"menuBtn3",
+		"menuBtn4",
+		"menuBtn5"
+	]
+}

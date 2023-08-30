@@ -149,6 +149,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "jumpthru",
 			"name": "Jump-thru",
 			"author": "Scirra",
@@ -268,7 +275,8 @@
 			"Sprite10",
 			"playbtn",
 			"LocalStorage",
-			"Greenworks"
+			"Greenworks",
+			"Steam"
 		],
 		"subfolders": [
 			{
@@ -315,7 +323,9 @@
 							"menuBtn5",
 							"menuBtn6",
 							"menuBtn7",
-							"menuBtn8"
+							"menuBtn8",
+							"social",
+							"subtitle"
 						],
 						"subfolders": [],
 						"name": "Text"
@@ -439,7 +449,10 @@
 		"items": [
 			"HUD_objects",
 			"HUD_text",
-			"Mathlete"
+			"Mathlete",
+			"MenuButtons",
+			"MenuSocial",
+			"Cursor"
 		],
 		"subfolders": []
 	},
@@ -521,7 +534,8 @@
 			"LoadingE",
 			"FadeE",
 			"FontLoaderE",
-			"ToDoE"
+			"ToDoE",
+			"Global"
 		],
 		"subfolders": [
 			{

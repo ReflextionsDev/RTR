@@ -404,6 +404,30 @@
 		{
 			"eventType": "include",
 			"includeSheet": "FadeE"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 539330302630371,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 348056476099645,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 909119433738688
 		}
 	],
 	"sid": 294432266632960

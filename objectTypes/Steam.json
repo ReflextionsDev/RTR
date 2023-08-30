@@ -1,0 +1,153 @@
+{
+	"name": "Steam",
+	"plugin-id": "Sprite",
+	"sid": 303043212340944,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 521370779408261
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 946790868205582
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 113,
+						"height": 122,
+						"originX": 0.5132743362831859,
+						"originY": 0.47540983606557374,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1472535,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 260650378232982,
+				"name": "Discord",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 86,
+						"height": 86,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6746917,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 74,
+						"height": 74,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6983,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 369706496616625,
+				"name": "Twitter",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4698633,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 999602761779601,
+				"name": "NLB.Dev",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 98,
+						"height": 98,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5064895,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 90,
+						"height": 90,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8441526,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 90,
+						"height": 90,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3548944,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 138438294164812,
+				"name": "Steam",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -16,6 +16,10 @@
 		{
 			"eventType": "comment",
 			"text": "Update credits"
+		},
+		{
+			"eventType": "comment",
+			"text": "Setup steam pipeline"
 		}
 	],
 	"sid": 516555539465536

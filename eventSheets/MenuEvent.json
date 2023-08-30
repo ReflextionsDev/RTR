@@ -6,6 +6,10 @@
 			"includeSheet": "FadeE"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
 			"eventType": "variable",
 			"name": "Loaded",
 			"type": "number",
@@ -1016,6 +1020,27 @@
 					"sid": 848406477292485
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 374916250328394,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 303470556115263
+				}
+			],
+			"sid": 552707740244504
 		}
 	],
 	"sid": 123903655350408

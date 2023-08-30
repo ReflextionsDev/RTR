@@ -1,0 +1,11 @@
+{
+	"name": "MenuSocial",
+	"plugin-id": "Text",
+	"sid": 993563917025117,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"social"
+	]
+}

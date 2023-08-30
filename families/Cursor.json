@@ -1,0 +1,17 @@
+{
+	"name": "Cursor",
+	"plugin-id": "Sprite",
+	"sid": 377194478844317,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 946702999348445
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Steam"
+	]
+}

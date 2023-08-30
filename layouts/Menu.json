@@ -213,12 +213,80 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 361,
-						"y": 491,
+						"x": 286,
+						"y": 456.501695,
 						"width": 362,
-						"height": 295,
+						"height": 296,
 						"originX": 0.5,
 						"originY": 0.501695,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cloud",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 4,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 113,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 531,
+						"y": 171,
+						"width": 435,
+						"height": 202,
+						"originX": 0.501149,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite8",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3016,
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "none",
+								"top-edge": "window-bottom",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 120,
+						"y": 501,
+						"width": 237,
+						"height": 551,
+						"originX": 0.434599,
+						"originY": 0.874773,
 						"color": [
 							1,
 							1,
@@ -269,7 +337,7 @@
 						"text": "Credits",
 						"enable-bbcode": false,
 						"font": "mathlete-bulky-webfont",
-						"size": 72,
+						"size": 64,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -301,9 +369,9 @@
 						}
 					},
 					"world": {
-						"x": 750,
-						"y": 374,
-						"width": 320,
+						"x": 802,
+						"y": 372,
+						"width": 216,
 						"height": 80,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -323,7 +391,7 @@
 						"text": "Play",
 						"enable-bbcode": false,
 						"font": "mathlete-bulky-webfont",
-						"size": 72,
+						"size": 64,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -355,9 +423,9 @@
 						}
 					},
 					"world": {
-						"x": 794,
-						"y": 201,
-						"width": 224,
+						"x": 800,
+						"y": 200,
+						"width": 216,
 						"height": 80,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -377,7 +445,7 @@
 						"text": "Options",
 						"enable-bbcode": false,
 						"font": "mathlete-bulky-webfont",
-						"size": 72,
+						"size": 64,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -409,9 +477,9 @@
 						}
 					},
 					"world": {
-						"x": 747,
-						"y": 286,
-						"width": 320,
+						"x": 800,
+						"y": 288,
+						"width": 216,
 						"height": 80,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -431,7 +499,7 @@
 						"text": "Exit",
 						"enable-bbcode": false,
 						"font": "mathlete-bulky-webfont",
-						"size": 72,
+						"size": 64,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -463,9 +531,9 @@
 						}
 					},
 					"world": {
-						"x": 556,
-						"y": 425,
-						"width": 352,
+						"x": 692,
+						"y": 422,
+						"width": 216,
 						"height": 80,
 						"originX": 0,
 						"originY": 0,
@@ -556,8 +624,8 @@
 						}
 					},
 					"world": {
-						"x": 584,
-						"y": 110,
+						"x": 565,
+						"y": 101,
 						"width": 606,
 						"height": 184,
 						"originX": 0.5,
@@ -573,34 +641,217 @@
 					}
 				},
 				{
-					"type": "Sprite8",
+					"type": "Steam",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
+						"initial-animation": "Steam",
+						"initial-frame": 2,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3016,
+					"uid": 115,
 					"instanceVariables": {},
 					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
 						"Anchor": {
 							"properties": {
-								"left-edge": "none",
-								"top-edge": "window-bottom",
+								"left-edge": "window-right",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
-								"enabled": true
+								"bottom-edge": "window-bottom",
+								"enabled": false
+							}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 5,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
 							}
 						}
 					},
 					"world": {
-						"x": 120,
-						"y": 501,
-						"width": 237,
-						"height": 551,
-						"originX": 0.434599,
-						"originY": 0.874773,
+						"x": 40,
+						"y": 488,
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "social",
+					"properties": {
+						"text": "Discord",
+						"enable-bbcode": false,
+						"font": "mathlete-bulky-webfont",
+						"size": 32,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 118,
+					"instanceVariables": {
+						"link": "https://discord.gg/nfRAZAhC4H"
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 5,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 358.5,
+						"y": 480,
+						"width": 115,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "social",
+					"properties": {
+						"text": "Twitter",
+						"enable-bbcode": false,
+						"font": "mathlete-bulky-webfont",
+						"size": 32,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 119,
+					"instanceVariables": {
+						"link": "https://twitter.com/nlbdotdev"
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 5,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 484,
+						"y": 480,
+						"width": 115,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "social",
+					"properties": {
+						"text": "NLB.DEV",
+						"enable-bbcode": false,
+						"font": "mathlete-bulky-webfont",
+						"size": 32,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 120,
+					"instanceVariables": {
+						"link": "https://nlb.dev"
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 5,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 614.5,
+						"y": 480,
+						"width": 115,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

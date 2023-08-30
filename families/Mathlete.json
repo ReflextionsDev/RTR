@@ -21,6 +21,8 @@
 		"musicLvl",
 		"lvlText",
 		"loadingText",
-		"soundLvl"
+		"soundLvl",
+		"social",
+		"subtitle"
 	]
 }

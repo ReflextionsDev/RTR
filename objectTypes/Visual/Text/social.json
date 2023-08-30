@@ -1,0 +1,23 @@
+{
+	"name": "social",
+	"plugin-id": "Text",
+	"sid": 464763017222171,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "link",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 227330672738562
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 966284906250639
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,15 @@
+{
+	"name": "subtitle",
+	"plugin-id": "Text",
+	"sid": 915946597088416,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 512258045883137
+		}
+	],
+	"effectTypes": []
+}

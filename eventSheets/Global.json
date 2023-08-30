@@ -1,0 +1,328 @@
+{
+	"name": "Global",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cursor",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Text"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 832455637652114,
+							"parameters": {
+								"object": "MenuSocial"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 342067971800163,
+							"parameters": {
+								"object": "MenuSocial"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "MenuSocial",
+							"sid": 829590817840402,
+							"parameters": {
+								"color": "rgbEx(255,255,255)"
+							}
+						}
+					],
+					"sid": 838156059716536
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 573154560885345,
+							"parameters": {
+								"object": "MenuButtons"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 484978673648067,
+							"parameters": {
+								"object": "MenuButtons"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "MenuButtons",
+							"sid": 985550412853945,
+							"parameters": {
+								"color": "rgbEx(255,255,255)"
+							}
+						}
+					],
+					"sid": 550827724768852
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 892909275580907,
+							"parameters": {
+								"object": "MenuSocial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "MenuSocial",
+							"sid": 478493594912061,
+							"parameters": {
+								"color": "rgbEx(0, 100, 150)"
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 991168376933948,
+							"parameters": {
+								"cursor-style": "hand"
+							}
+						}
+					],
+					"sid": 845865034555807,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 806608302762936
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 290462860787719,
+							"parameters": {
+								"object": "MenuButtons"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "MenuButtons",
+							"sid": 128549991596768,
+							"parameters": {
+								"color": "rgbEx(100, 0, 0)"
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 432974467255542,
+							"parameters": {
+								"cursor-style": "hand"
+							}
+						}
+					],
+					"sid": 308936212534422
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 705985784898965
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 785484102753098,
+							"parameters": {
+								"object": "Cursor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 147772045139089,
+							"parameters": {
+								"cursor-style": "hand"
+							}
+						}
+					],
+					"sid": 353302483062916
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 875824336896611
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 852202898276014,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 170949061538971
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 370704321755179,
+							"parameters": {
+								"object": "Cursor"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "Cursor",
+							"sid": 798710666602522,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						}
+					],
+					"sid": 691691698326913
+				},
+				{
+					"eventType": "comment",
+					"text": "Links"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 217512250930275,
+							"parameters": {
+								"object": "social"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "open-browser",
+							"objectClass": "NWjs",
+							"sid": 706294628684259,
+							"parameters": {
+								"url": "social.link"
+							}
+						},
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 158871133182526,
+							"parameters": {
+								"url": "social.link",
+								"tag": "social.link"
+							}
+						}
+					],
+					"sid": 999743257654986
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 348573439043713,
+							"parameters": {
+								"object": "Steam"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 690183756213533,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-available",
+									"objectClass": "Greenworks",
+									"sid": 144494400712332
+								}
+							],
+							"actions": [
+								{
+									"id": "activate-overlay",
+									"objectClass": "Greenworks",
+									"sid": 965309832035526,
+									"parameters": {
+										"option": "achievements"
+									}
+								}
+							],
+							"sid": 559444986489609
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 362339405980615
+								}
+							],
+							"actions": [
+								{
+									"id": "open-url-in-new-window",
+									"objectClass": "Browser",
+									"sid": 720635516651377,
+									"parameters": {
+										"url": "\"https://store.steampowered.com/app/391150\"",
+										"tag": "\"steam\""
+									}
+								}
+							],
+							"sid": 422838368739321
+						}
+					]
+				}
+			],
+			"sid": 816982980558346
+		}
+	],
+	"sid": 586960360048631
+}

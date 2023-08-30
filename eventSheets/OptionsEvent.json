@@ -162,7 +162,32 @@
 					}
 				}
 			],
-			"sid": 1565733830438715
+			"sid": 1565733830438715,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 501409538636141,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 160051258556554,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 683940150275957
 		},
 		{
 			"eventType": "block",
