@@ -33,6 +33,32 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 591212655789750
+				},
+				{
+					"id": "is-available",
+					"objectClass": "Greenworks",
+					"sid": 274943712269191
+				}
+			],
+			"actions": [
+				{
+					"id": "activate-achievement",
+					"objectClass": "Greenworks",
+					"sid": 378854325591979,
+					"parameters": {
+						"achievement": "\"run\""
+					}
+				}
+			],
+			"sid": 977986292171621
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
 					"sid": 193,

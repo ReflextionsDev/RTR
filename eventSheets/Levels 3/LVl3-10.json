@@ -157,14 +157,20 @@
 			"children": [
 				{
 					"eventType": "block",
-					"conditions": [],
+					"conditions": [
+						{
+							"id": "is-available",
+							"objectClass": "Greenworks",
+							"sid": 174874532424124
+						}
+					],
 					"actions": [
 						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 2975886037879091,
+							"id": "activate-achievement",
+							"objectClass": "Greenworks",
+							"sid": 458272881338510,
 							"parameters": {
-								"layout": "More"
+								"achievement": "\"3.10\""
 							}
 						}
 					],

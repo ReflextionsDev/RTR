@@ -134,6 +134,27 @@
 			"children": [
 				{
 					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-available",
+							"objectClass": "Greenworks",
+							"sid": 240410304608851
+						}
+					],
+					"actions": [
+						{
+							"id": "activate-achievement",
+							"objectClass": "Greenworks",
+							"sid": 968963781790922,
+							"parameters": {
+								"achievement": "\"1.5\""
+							}
+						}
+					],
+					"sid": 820417133473950
+				},
+				{
+					"eventType": "block",
 					"conditions": [],
 					"actions": [
 						{
@@ -146,21 +167,6 @@
 						}
 					],
 					"sid": 4216174596884094
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 8093782526565292,
-							"parameters": {
-								"layout": "Lvl1-6"
-							}
-						}
-					],
-					"sid": 3146519042509493
 				}
 			]
 		},
