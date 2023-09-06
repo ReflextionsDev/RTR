@@ -2322,6 +2322,11 @@
 					"uid": 3195,
 					"instanceVariables": {},
 					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
 						"Anchor": {
 							"properties": {
 								"left-edge": "window-left",

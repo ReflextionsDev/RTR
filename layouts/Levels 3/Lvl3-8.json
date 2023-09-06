@@ -177,7 +177,13 @@
 					},
 					"uid": 2638,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 6562,
 						"y": 1336,
@@ -206,7 +212,13 @@
 					},
 					"uid": 2639,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 6324,
 						"y": 1215,
@@ -235,7 +247,13 @@
 					},
 					"uid": 2640,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 6105,
 						"y": 1158,
@@ -264,7 +282,13 @@
 					},
 					"uid": 2641,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 5819,
 						"y": 1126,
@@ -293,7 +317,13 @@
 					},
 					"uid": 2642,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 5550,
 						"y": 1107,
@@ -322,7 +352,13 @@
 					},
 					"uid": 2643,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 5287,
 						"y": 1070,
@@ -351,7 +387,13 @@
 					},
 					"uid": 2644,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 5045,
 						"y": 1023,
@@ -1052,7 +1094,13 @@
 					},
 					"uid": 6216,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 6800,
 						"y": 1399,

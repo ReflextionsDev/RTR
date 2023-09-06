@@ -12,6 +12,14 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"Steam"
+		"Steam",
+		"SoundLeft",
+		"SoundRight",
+		"Sprite6",
+		"playbtn",
+		"pause",
+		"backbtn",
+		"MusicRight",
+		"MusicLeft"
 	]
 }

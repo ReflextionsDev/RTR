@@ -132,7 +132,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
-						"initial-frame": 0,
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -143,9 +143,9 @@
 						"x": 462,
 						"y": 260,
 						"width": 924,
-						"height": 520,
+						"height": 319,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.18495297805642633,
 						"color": [
 							1,
 							1,
@@ -168,6 +168,11 @@
 					"uid": 99,
 					"instanceVariables": {},
 					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
 						"Anchor": {
 							"properties": {
 								"left-edge": "window-right",
@@ -208,9 +213,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 285.083435059,
-						"y": 157,
-						"width": 271,
+						"x": 462,
+						"y": 153,
+						"width": 234,
 						"height": 63,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -283,22 +288,130 @@
 					}
 				},
 				{
-					"type": "ReflextionsWeb",
+					"type": "generalTxt",
 					"properties": {
-						"initially-visible": false,
+						"text": "GAME BY Nathan Bennett",
+						"enable-bbcode": false,
+						"font": "mathlete-bulky-webfont",
+						"size": 48,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 114,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 462,
+						"y": 60,
+						"width": 416,
+						"height": 83,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "credits",
+					"properties": {
+						"initially-visible": true,
 						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 105,
+					"uid": 116,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 634.5,
-						"y": 150,
-						"width": 312,
-						"height": 61,
+						"x": 466,
+						"y": -569,
+						"width": 924,
+						"height": 520,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "generalTxt",
+					"properties": {
+						"text": "@NLBDOTDEV",
+						"enable-bbcode": false,
+						"font": "mathlete-bulky-webfont",
+						"size": 48,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 117,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 458.083,
+						"y": 154,
+						"width": 188,
+						"height": 83,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

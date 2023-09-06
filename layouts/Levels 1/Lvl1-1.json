@@ -2199,6 +2199,11 @@
 					"uid": 3648,
 					"instanceVariables": {},
 					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
 						"Anchor": {
 							"properties": {
 								"left-edge": "window-right",
@@ -2338,6 +2343,11 @@
 					"uid": 3679,
 					"instanceVariables": {},
 					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
 						"Anchor": {
 							"properties": {
 								"left-edge": "window-left",
@@ -2459,7 +2469,13 @@
 					},
 					"uid": 1308,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 544,
 						"y": 352,

@@ -3,6 +3,10 @@
 	"events": [
 		{
 			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
+			"eventType": "include",
 			"includeSheet": "FadeE"
 		},
 		{
@@ -122,6 +126,27 @@
 					"sid": 214148850554387
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 707209815530952
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 529573305061472,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				}
+			],
+			"sid": 194581264408109
 		},
 		{
 			"eventType": "block",

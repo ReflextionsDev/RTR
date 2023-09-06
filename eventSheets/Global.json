@@ -9,6 +9,27 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 763806871233173
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 265033612917689,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 523560094218927
+				},
+				{
 					"eventType": "comment",
 					"text": "Text"
 				},

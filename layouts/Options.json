@@ -222,6 +222,11 @@
 					"uid": 3669,
 					"instanceVariables": {},
 					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
 						"Anchor": {
 							"properties": {
 								"left-edge": "window-right",
@@ -368,7 +373,13 @@
 					},
 					"uid": 3642,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 510,
 						"y": 224,
@@ -397,7 +408,13 @@
 					},
 					"uid": 3643,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 510,
 						"y": 352,
@@ -426,7 +443,13 @@
 					},
 					"uid": 3644,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 702,
 						"y": 224,
@@ -455,7 +478,13 @@
 					},
 					"uid": 3645,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 702,
 						"y": 352,

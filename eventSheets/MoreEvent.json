@@ -195,8 +195,18 @@
 					"id": "open-url-in-new-window",
 					"objectClass": "Browser",
 					"sid": 7956439633453437,
+					"disabled": true,
 					"parameters": {
 						"url": "\"https://twitter.com/ReflextionsOfic\"",
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 318969905280498,
+					"parameters": {
+						"url": "\"https://twitter.com/nlbdotdev\"",
 						"tag": "\"\""
 					}
 				}
@@ -270,9 +280,19 @@
 					"id": "open-url-in-new-window",
 					"objectClass": "Browser",
 					"sid": 4308683806492236,
+					"disabled": true,
 					"parameters": {
 						"url": "\"http://reflextionsdev.com\"",
 						"tag": "\"Reflextions\""
+					}
+				},
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 524729348392296,
+					"parameters": {
+						"url": "\"https://nlb.dev/games\"",
+						"tag": "\"NLB.DEV\""
 					}
 				}
 			],

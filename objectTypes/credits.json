@@ -41,6 +41,38 @@
 						},
 						"useCollisionPoly": true,
 						"duration": 1
+					},
+					{
+						"width": 924,
+						"height": 319,
+						"originX": 0.5,
+						"originY": 0.18495297805642633,
+						"originalSource": "C:\\Users\\Nathan\\Desktop\\credits.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7806342,
+						"collisionPoly": {
+							"points": [
+								0.1,
+								0,
+								0.5,
+								0,
+								0.782051,
+								0,
+								0.565385,
+								0.18495297805642633,
+								0.574359,
+								0,
+								0.5,
+								0.8150462695924766,
+								0.075641,
+								0.8150462695924766,
+								0.0717949,
+								0.18495297805642633
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
 					}
 				],
 				"sid": 6417275171337541,
@@ -49,7 +81,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []
