@@ -103,6 +103,39 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 925124663397385,
+							"parameters": {
+								"object": "lvlText"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 579347237314926,
+							"parameters": {
+								"object": "lvlText"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 372641868633491,
+							"parameters": {
+								"color": "rgbEx(0,0,0)"
+							}
+						}
+					],
+					"sid": 115440404249372
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "cursor-is-over-object",
 							"objectClass": "Mouse",
 							"sid": 892909275580907,
@@ -168,6 +201,43 @@
 						}
 					],
 					"sid": 308936212534422
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 275646998319430
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 588109646136464,
+							"parameters": {
+								"object": "lvlText"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "lvlText",
+							"sid": 466480130236565,
+							"parameters": {
+								"color": "rgbEx(100, 0, 0)"
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 457103029576985,
+							"parameters": {
+								"cursor-style": "hand"
+							}
+						}
+					],
+					"sid": 216177424512503
 				},
 				{
 					"eventType": "block",
@@ -242,11 +312,8 @@
 							}
 						}
 					],
-					"sid": 691691698326913
-				},
-				{
-					"eventType": "comment",
-					"text": "Level Select"
+					"sid": 691691698326913,
+					"disabled": true
 				},
 				{
 					"eventType": "comment",

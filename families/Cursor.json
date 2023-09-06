@@ -20,6 +20,8 @@
 		"pause",
 		"backbtn",
 		"MusicRight",
-		"MusicLeft"
+		"MusicLeft",
+		"nullLeft",
+		"nullRight"
 	]
 }
