@@ -2790,7 +2790,7 @@
 						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
-						"bold": true,
+						"bold": false,
 						"italic": false,
 						"color": [
 							1,
@@ -4098,7 +4098,7 @@
 						"font": "mathlete-bulky-webfont",
 						"size": 48,
 						"line-height": 0,
-						"bold": true,
+						"bold": false,
 						"italic": false,
 						"color": [
 							1,

@@ -16,6 +16,10 @@
 			"includeSheet": "FadeE"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
