@@ -331,26 +331,53 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 999743257654986,
+					"children": [
 						{
-							"id": "open-browser",
-							"objectClass": "NWjs",
-							"sid": 706294628684259,
-							"parameters": {
-								"url": "social.link"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-nwjs-export",
+									"objectClass": "PlatformInfo",
+									"sid": 308683327113502
+								}
+							],
+							"actions": [
+								{
+									"id": "open-browser",
+									"objectClass": "NWjs",
+									"sid": 761894614628491,
+									"parameters": {
+										"url": "social.link"
+									}
+								}
+							],
+							"sid": 584128341197215
 						},
 						{
-							"id": "open-url-in-new-window",
-							"objectClass": "Browser",
-							"sid": 158871133182526,
-							"parameters": {
-								"url": "social.link",
-								"tag": "social.link"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 335807484157481
+								}
+							],
+							"actions": [
+								{
+									"id": "open-url-in-new-window",
+									"objectClass": "Browser",
+									"sid": 512759262569503,
+									"parameters": {
+										"url": "social.link",
+										"tag": "social.link"
+									}
+								}
+							],
+							"sid": 368301420271940
 						}
-					],
-					"sid": 999743257654986
+					]
 				},
 				{
 					"eventType": "block",
@@ -380,7 +407,7 @@
 								{
 									"id": "activate-overlay",
 									"objectClass": "Greenworks",
-									"sid": 965309832035526,
+									"sid": 603182370678892,
 									"parameters": {
 										"option": "achievements"
 									}
