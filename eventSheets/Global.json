@@ -331,26 +331,53 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 999743257654986,
+					"children": [
 						{
-							"id": "open-browser",
-							"objectClass": "NWjs",
-							"sid": 706294628684259,
-							"parameters": {
-								"url": "social.link"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-nwjs-export",
+									"objectClass": "PlatformInfo",
+									"sid": 308683327113502
+								}
+							],
+							"actions": [
+								{
+									"id": "open-browser",
+									"objectClass": "NWjs",
+									"sid": 761894614628491,
+									"parameters": {
+										"url": "social.link"
+									}
+								}
+							],
+							"sid": 584128341197215
 						},
 						{
-							"id": "open-url-in-new-window",
-							"objectClass": "Browser",
-							"sid": 158871133182526,
-							"parameters": {
-								"url": "social.link",
-								"tag": "social.link"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 335807484157481
+								}
+							],
+							"actions": [
+								{
+									"id": "open-url-in-new-window",
+									"objectClass": "Browser",
+									"sid": 512759262569503,
+									"parameters": {
+										"url": "social.link",
+										"tag": "social.link"
+									}
+								}
+							],
+							"sid": 368301420271940
 						}
-					],
-					"sid": 999743257654986
+					]
 				},
 				{
 					"eventType": "block",
@@ -380,13 +407,14 @@
 								{
 									"id": "activate-overlay",
 									"objectClass": "Greenworks",
-									"sid": 965309832035526,
+									"sid": 603182370678892,
 									"parameters": {
 										"option": "achievements"
 									}
 								}
 							],
-							"sid": 559444986489609
+							"sid": 559444986489609,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -394,21 +422,47 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 362339405980615
+									"sid": 826365842187872
+								},
+								{
+									"id": "is-nwjs-export",
+									"objectClass": "PlatformInfo",
+									"sid": 762904408808064
+								}
+							],
+							"actions": [
+								{
+									"id": "open-browser",
+									"objectClass": "NWjs",
+									"sid": 455740447562034,
+									"parameters": {
+										"url": "\"https://store.steampowered.com/app/391150\""
+									}
+								}
+							],
+							"sid": 308804207705008
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 751542049876065
 								}
 							],
 							"actions": [
 								{
 									"id": "open-url-in-new-window",
 									"objectClass": "Browser",
-									"sid": 720635516651377,
+									"sid": 718044173127706,
 									"parameters": {
 										"url": "\"https://store.steampowered.com/app/391150\"",
-										"tag": "\"steam\""
+										"tag": "\"https://store.steampowered.com/app/391150\""
 									}
 								}
 							],
-							"sid": 422838368739321
+							"sid": 376862419308501
 						}
 					]
 				}

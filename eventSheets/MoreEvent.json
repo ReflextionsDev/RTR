@@ -205,13 +205,59 @@
 					"id": "open-url-in-new-window",
 					"objectClass": "Browser",
 					"sid": 318969905280498,
+					"disabled": true,
 					"parameters": {
 						"url": "\"https://twitter.com/nlbdotdev\"",
 						"tag": "\"\""
 					}
 				}
 			],
-			"sid": 7082684129760568
+			"sid": 7082684129760568,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-nwjs-export",
+							"objectClass": "PlatformInfo",
+							"sid": 235601116788574
+						}
+					],
+					"actions": [
+						{
+							"id": "open-browser",
+							"objectClass": "NWjs",
+							"sid": 351018490529248,
+							"parameters": {
+								"url": "\"https://twitter.com/nlbdotdev\""
+							}
+						}
+					],
+					"sid": 585024854201638
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 517316404879509
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 944657750332356,
+							"parameters": {
+								"url": "\"https://twitter.com/nlbdotdev\"",
+								"tag": "\"https://twitter.com/nlbdotdev\""
+							}
+						}
+					],
+					"sid": 849854939018440
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -230,13 +276,59 @@
 					"id": "open-url-in-new-window",
 					"objectClass": "Browser",
 					"sid": 869265546595112,
+					"disabled": true,
 					"parameters": {
 						"url": "\"https://twitter.com/SymphonicStorms\"",
 						"tag": "\"2\""
 					}
 				}
 			],
-			"sid": 7570377636419959
+			"sid": 7570377636419959,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-nwjs-export",
+							"objectClass": "PlatformInfo",
+							"sid": 545615209862642
+						}
+					],
+					"actions": [
+						{
+							"id": "open-browser",
+							"objectClass": "NWjs",
+							"sid": 763923104879761,
+							"parameters": {
+								"url": "\"https://twitter.com/SymphonicStorms\""
+							}
+						}
+					],
+					"sid": 394345571801810
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 833518439580129
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 866911292589956,
+							"parameters": {
+								"url": "\"https://twitter.com/SymphonicStorms\"",
+								"tag": "\"https://twitter.com/SymphonicStorms\""
+							}
+						}
+					],
+					"sid": 824021066230111
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -255,13 +347,59 @@
 					"id": "open-url-in-new-window",
 					"objectClass": "Browser",
 					"sid": 6175957122961116,
+					"disabled": true,
 					"parameters": {
 						"url": "\"https://twitter.com/_kubbi\"",
 						"tag": "\"\""
 					}
 				}
 			],
-			"sid": 3099605321833169
+			"sid": 3099605321833169,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-nwjs-export",
+							"objectClass": "PlatformInfo",
+							"sid": 563924703891778
+						}
+					],
+					"actions": [
+						{
+							"id": "open-browser",
+							"objectClass": "NWjs",
+							"sid": 892226808658552,
+							"parameters": {
+								"url": "\"https://twitter.com/_kubbi\""
+							}
+						}
+					],
+					"sid": 502709628758693
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 619527282801973
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 550891095130964,
+							"parameters": {
+								"url": "\"https://twitter.com/_kubbi\"",
+								"tag": "\"https://twitter.com/_kubbi\""
+							}
+						}
+					],
+					"sid": 760568237687852
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -290,13 +428,59 @@
 					"id": "open-url-in-new-window",
 					"objectClass": "Browser",
 					"sid": 524729348392296,
+					"disabled": true,
 					"parameters": {
 						"url": "\"https://nlb.dev/games\"",
 						"tag": "\"NLB.DEV\""
 					}
 				}
 			],
-			"sid": 2627832395695325
+			"sid": 2627832395695325,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-nwjs-export",
+							"objectClass": "PlatformInfo",
+							"sid": 735196368663140
+						}
+					],
+					"actions": [
+						{
+							"id": "open-browser",
+							"objectClass": "NWjs",
+							"sid": 180986106095469,
+							"parameters": {
+								"url": "\"https://nlb.dev/games\""
+							}
+						}
+					],
+					"sid": 481084425059783
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 852041555241840
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 678675358538670,
+							"parameters": {
+								"url": "\"https://nlb.dev/games\"",
+								"tag": "\"https://nlb.dev/games\""
+							}
+						}
+					],
+					"sid": 400284788285525
+				}
+			]
 		},
 		{
 			"eventType": "block",
