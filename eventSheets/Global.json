@@ -413,7 +413,8 @@
 									}
 								}
 							],
-							"sid": 559444986489609
+							"sid": 559444986489609,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -421,21 +422,47 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 362339405980615
+									"sid": 826365842187872
+								},
+								{
+									"id": "is-nwjs-export",
+									"objectClass": "PlatformInfo",
+									"sid": 762904408808064
+								}
+							],
+							"actions": [
+								{
+									"id": "open-browser",
+									"objectClass": "NWjs",
+									"sid": 455740447562034,
+									"parameters": {
+										"url": "\"https://store.steampowered.com/app/391150\""
+									}
+								}
+							],
+							"sid": 308804207705008
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 751542049876065
 								}
 							],
 							"actions": [
 								{
 									"id": "open-url-in-new-window",
 									"objectClass": "Browser",
-									"sid": 720635516651377,
+									"sid": 718044173127706,
 									"parameters": {
 										"url": "\"https://store.steampowered.com/app/391150\"",
-										"tag": "\"steam\""
+										"tag": "\"https://store.steampowered.com/app/391150\""
 									}
 								}
 							],
-							"sid": 422838368739321
+							"sid": 376862419308501
 						}
 					]
 				}
