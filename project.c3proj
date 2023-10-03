@@ -518,10 +518,18 @@
 				"items": [
 					"LevelSelect1",
 					"LevelSelect2",
-					"LevelSelect3"
+					"LevelSelect3",
+					"LevelSelect4"
 				],
 				"subfolders": [],
 				"name": "LevelSelect"
+			},
+			{
+				"items": [
+					"Lvl4-1"
+				],
+				"subfolders": [],
+				"name": "Levels 4"
 			}
 		]
 	},
@@ -591,10 +599,18 @@
 					"LevelSelect",
 					"LevelSelect1",
 					"LevelSelect2",
-					"LevelSelect3"
+					"LevelSelect3",
+					"LevelSelect4"
 				],
 				"subfolders": [],
 				"name": "LevelSelect"
+			},
+			{
+				"items": [
+					"Lvl4-1"
+				],
+				"subfolders": [],
+				"name": "Levels 4"
 			}
 		]
 	},

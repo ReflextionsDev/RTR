@@ -1,0 +1,51 @@
+{
+	"name": "LevelSelect4",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "LevelSelect"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 907595952312545,
+					"parameters": {
+						"object": "buttonLeft"
+					}
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 668984928662038,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 289633124704148,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 453898552515564,
+					"parameters": {
+						"layout": "LevelSelect3"
+					}
+				}
+			],
+			"sid": 825020011563966,
+			"isOrBlock": true
+		}
+	],
+	"sid": 379572344596548
+}
