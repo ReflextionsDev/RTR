@@ -540,6 +540,37 @@
 						{
 							"eventType": "group",
 							"disabled": false,
+							"title": "WallJump",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 387213424381278,
+											"parameters": {
+												"key": 38
+											}
+										},
+										{
+											"id": "is-jumping",
+											"objectClass": "player",
+											"sid": 467888030398327,
+											"behaviorType": "Platform"
+										}
+									],
+									"actions": [],
+									"sid": 368578362730966
+								}
+							],
+							"sid": 488770058179379
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
 							"title": "Left/Right",
 							"description": "",
 							"isActiveOnStart": true,

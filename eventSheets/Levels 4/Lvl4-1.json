@@ -58,9 +58,9 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "levelNum",
-					"sid": 158220274260340,
+					"sid": 876675005749689,
 					"parameters": {
-						"frame-number": "40"
+						"frame-number": "30"
 					}
 				}
 			],
